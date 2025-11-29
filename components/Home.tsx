@@ -19,7 +19,7 @@ export default function Home() {
   }, [t.home.rotatingTexts.length])
 
   const socialLinks = {
-    linkedin: 'https://linkedin.com/in/deyril-marlon-ibraimo',
+    linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
     facebook: 'https://facebook.com/deyril.marlon',
     instagram: 'https://instagram.com/deyril.marlon',
     whatsapp: `https://wa.me/258845486656?text=${encodeURIComponent(t.contact.whatsappMessage)}`,

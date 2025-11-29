@@ -450,7 +450,7 @@ export default function Contact() {
               </h4>
               <div className="flex items-center gap-4">
                 <a
-                  href="https://www.linkedin.com/in/deyril-marlon-ibraimo"
+                  href="https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500 transform hover:scale-125 hover:rotate-12"

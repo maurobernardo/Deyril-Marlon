@@ -80,7 +80,7 @@ export default function Chatbot() {
       contact: {
         email: 'deyrilibraimo@gmail.com',
         phone: '+258 845 486 656',
-        linkedin: 'https://www.linkedin.com/in/deyril-marlon-ibraimo',
+        linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
       },
     },
     pt: {
@@ -118,7 +118,7 @@ export default function Chatbot() {
       contact: {
         email: 'deyrilibraimo@gmail.com',
         phone: '+258 845 486 656',
-        linkedin: 'https://www.linkedin.com/in/deyril-marlon-ibraimo',
+        linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
       },
     },
   }

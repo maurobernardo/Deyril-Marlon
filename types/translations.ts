@@ -193,6 +193,20 @@ export interface Translations {
     communitiesTrained: string
     countriesWorked: string
   }
+  timeline: {
+    title: string
+    subtitle: string
+    items: Array<{
+      type: 'work' | 'education' | 'achievement'
+      typeLabel: string
+      title: string
+      period: string
+      organization?: string
+      location?: string
+      description?: string
+      highlights?: string[]
+    }>
+  }
   space4all: {
     title: string
     subtitle: string
