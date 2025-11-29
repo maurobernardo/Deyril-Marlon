@@ -723,17 +723,17 @@ export default function ProjectDetailPage() {
                 </p>
 
                 {/* Image 3 (Participatory validation): Beira, February 2025 */}
-                {images[3] && (
+                {images[4] && (
                   <div 
                     className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
                     onClick={() => {
-                      setLightboxIndex(3)
+                      setLightboxIndex(4)
                       setLightboxOpen(true)
                     }}
                   >
                     <Image
-                      src={images[3].src}
-                      alt={images[3].alt}
+                      src={images[4].src}
+                      alt={images[4].alt}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-300"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -744,7 +744,7 @@ export default function ProjectDetailPage() {
                       </div>
                     </div>
                     <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
-                      {images[3].label}
+                      {images[4].label}
                     </div>
                   </div>
                 )}
@@ -769,18 +769,18 @@ export default function ProjectDetailPage() {
                 </p>
 
                 {/* Image 4: Field Observation Kisumo, January 2025 */}
-                {images[4] && (
+                {images[5] && (
                   <div className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 bg-gray-200 dark:bg-dark-surface">
                     <Image
-                      src={images[4].src}
-                      alt={images[4].alt}
+                      src={images[5].src}
+                      alt={images[5].alt}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                       unoptimized
                     />
                     <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
-                      {images[4].label}
+                      {images[5].label}
                     </div>
                   </div>
                 )}

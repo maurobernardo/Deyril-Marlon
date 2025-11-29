@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 
 export default function Contact() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
   const [formData, setFormData] = useState({
     nome: '',
@@ -77,7 +77,11 @@ export default function Contact() {
         !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 
         !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
       setSubmitStatus('error')
-      setErrorMessage('EmailJS não está configurado. Por favor, configure as variáveis de ambiente.')
+      setErrorMessage(
+        language === 'pt' 
+          ? 'EmailJS não está configurado. Configure as variáveis de ambiente no Vercel: Settings → Environment Variables. Veja CONFIGURAR_VERCEL.md para instruções.'
+          : 'EmailJS is not configured. Set environment variables in Vercel: Settings → Environment Variables. See CONFIGURAR_VERCEL.md for instructions.'
+      )
       setIsSubmitting(false)
       return
     }
