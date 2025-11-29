@@ -1,0 +1,39 @@
+ESTRUTURA DE PASTAS PARA AS IMAGENS
+=====================================
+
+📁 Deyril Marlon/
+   │
+   ├── 📁 public/                          ← PASTA PRINCIPAL DE IMAGENS
+   │   │
+   │   ├── 📄 profile.jpg                  ← SUA FOTO DE PERFIL AQUI
+   │   │   (ou profile.png)
+   │   │
+   │   └── 📁 projects/
+   │       │
+   │       └── 📁 space4all/               ← PASTA DO PROJETO SPACE4ALL
+   │           │
+   │           ├── 📄 image0.jpg           ← Imagem 1: Research Approach
+   │           ├── 📄 image1.jpg           ← Imagem 2: Map of Locations
+   │           ├── 📄 image2.jpg           ← Imagem 3: Kisumu Validation
+   │           ├── 📄 image3.jpg           ← Imagem 4: Beira Validation
+   │           └── 📄 video.mp4            ← Vídeo (opcional)
+
+INSTRUÇÕES:
+-----------
+
+1. FOTO DE PERFIL:
+   - Coloque sua foto em: public/profile.jpg
+   - Ou: public/profile.png
+   - Depois descomente o código no arquivo components/Home.tsx
+
+2. IMAGENS SPACE4ALL:
+   - Coloque todas as 4 imagens em: public/projects/space4all/
+   - Nomes exatos: image0.jpg, image1.jpg, image2.jpg, image3.jpg
+   - Vídeo opcional: video.mp4
+
+3. VERIFICAR:
+   - A pasta public/projects/space4all/ já foi criada
+   - Basta adicionar os arquivos de imagem
+
+
+

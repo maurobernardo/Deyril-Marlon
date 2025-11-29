@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "courses": "Courses",
+    "publications": "Publications",
+    "training": "Training & Skills Transfers"
+  },
+  "home": {
+    "name": "Deyril Marlon Ibraimo",
+    "title": "Agronomist & Remote Sensing Analyst",
+    "rotatingTexts": [
+      "Remote Sensing Analyst with over 3 years experience",
+      "GIS and Earth Observation Systems specialist",
+      "Agriculture, Forest and biodiversity monitoring expert",
+      "Participatory spatial data for community-based natural resources management"
+    ],
+    "seeCV": "See my CV",
+    "stats": {
+      "experience": "3+ Years of Experience",
+      "projects": "10+ Projects Completed",
+      "clients": "50+ Happy Clients",
+      "publications": "5+ Publications"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "A Remote Sensing Analyst with over 3 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project."
+  },
+  "projects": {
+    "title": "My Recent Works",
+    "viewDetails": "View Details",
+    "space4all": {
+      "title": "SPACE4ALL",
+      "subtitle": "Mapping climate vulnerabilities of slums by combining citizen science and earth observation technology",
+      "date": "2024 - Ongoing",
+      "overview": "SPACE4ALL is a project owned by the ITC- University of Twente and NWO (Dutch Research Council) that aims to unravel the climate vulnerability of slum communities in large and secondary cities by combining Citizen Science and Earth Observation methods. Earth Observation methods have the advantage of producing physical data for large areas and have shown their capability to map the physical aspects of slums. The project addresses the gaps by developing an innovative AI methodology by combining Citizen Science data and Earth Observation data with climate change data to locate hotspots of urban poor exposed to climate-related hazards (e.g., sea-level rise, storms, floods, extreme temperatures).",
+      "approach": "This novel approach had the main purpose the development and training of deep learning models in order to map the degree of vulnerability of slum communities to climate-related risks across both large and secondary cities in Africa, to enhance the precision and the flooding early-warning capacity of the model.",
+      "locations": "The project was conducted in African cities, namely Kisumu and Nairobi in Kenya, Accra and Tema in Ghana and at last Beira and Chimoio in Mozambique, in partnership with African institutions such as Data4MOZ and Sdi Kenya.",
+      "methodology": "The study was conducted in a participatory format where the citizens were able to point and map the vulnerable areas of the city to climate hazards, especially flooding, including its depth level of the floods for the latest events. The applied methodology allowed to gather local experts and stakeholders experience regarding the city's vulnerability to climate hazards through workshops with governmental and municipality institutions, NGO, private sector and community-based organizations that are engaged on climate action, WASH and urban planning.",
+      "contribution": "Under the Data4MOZ umbrella, as remote sensing analyst in the institution, my role for Space4All went from the field data collect and model validation, conducting field validation sessions in Kisumo (Kenya) together with ITC-University of Twente members and leading the activities in Beira and Chimoio (Mozambique), engaging the local communities and stakeholders for model validation sessions and gather subsidies by field observations, transect walks and mapping informal settlements.",
+      "contact": "For further information:",
+      "contactPerson": "Lorraine Trento Oliveira (ITC-UT Space4all Researcher)"
+    }
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "courses": {
+    "title": "My Courses"
+  },
+  "publications": {
+    "title": "My Publications"
+  },
+  "training": {
+    "title": "Training & Skills Transfers"
+  }
+}

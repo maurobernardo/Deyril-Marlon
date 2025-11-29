@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre Mim",
+    "projects": "Projetos",
+    "skills": "Competências",
+    "courses": "Cursos",
+    "publications": "Publicações",
+    "training": "Formação e Transferência de Competências"
+  },
+  "home": {
+    "name": "Deyril Marlon Ibraimo",
+    "title": "Agrónomo e Analista de Sensoriamento Remoto",
+    "rotatingTexts": [
+      "Analista de Sensoriamento Remoto com mais de 3 anos de experiência",
+      "Especialista em Sistemas SIG e Observação da Terra",
+      "Especialista em monitorização de Agricultura, Floresta e biodiversidade",
+      "Dados espaciais participativos para gestão comunitária de recursos naturais"
+    ],
+    "seeCV": "Ver meu CV",
+    "stats": {
+      "experience": "3+ Anos de Experiência",
+      "projects": "10+ Projetos Concluídos",
+      "clients": "50+ Clientes Satisfeitos",
+      "publications": "5+ Publicações"
+    }
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "bio": "Um Analista de Sensoriamento Remoto com mais de 3 anos de experiência. A minha área de especialização está notavelmente focada em Sistemas SIG e Observação da Terra (EO) para Agricultura, Floresta e monitorização da biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronómicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades na monitorização da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de investigação e monitorização, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto."
+  },
+  "projects": {
+    "title": "Meus Trabalhos Recentes",
+    "viewDetails": "Ver Detalhes",
+    "space4all": {
+      "title": "SPACE4ALL",
+      "subtitle": "Mapeamento de vulnerabilidades climáticas de favelas combinando ciência cidadã e tecnologia de observação da terra",
+      "date": "2024 - Em Curso",
+      "overview": "SPACE4ALL é um projeto da ITC-Universidade de Twente e NWO (Conselho Holandês de Investigação) que visa desvendar a vulnerabilidade climática de comunidades de favelas em grandes e cidades secundárias combinando métodos de Ciência Cidadã e Observação da Terra. Os métodos de Observação da Terra têm a vantagem de produzir dados físicos para grandes áreas e mostraram a sua capacidade de mapear os aspectos físicos das favelas. O projeto aborda as lacunas desenvolvendo uma metodologia inovadora de IA combinando dados de Ciência Cidadã e dados de Observação da Terra com dados de mudanças climáticas para localizar pontos críticos de pobres urbanos expostos a riscos relacionados com o clima (por exemplo, subida do nível do mar, tempestades, inundações, temperaturas extremas).",
+      "approach": "Esta abordagem inovadora teve como principal objetivo o desenvolvimento e treino de modelos de aprendizagem profunda para mapear o grau de vulnerabilidade das comunidades de favelas a riscos relacionados com o clima em grandes e cidades secundárias em África, para melhorar a precisão e a capacidade de alerta precoce de inundações do modelo.",
+      "locations": "O projeto foi realizado em cidades africanas, nomeadamente Kisumu e Nairobi no Quénia, Accra e Tema no Gana e por último Beira e Chimoio em Moçambique, em parceria com instituições africanas como Data4MOZ e Sdi Kenya.",
+      "methodology": "O estudo foi realizado num formato participativo onde os cidadãos puderam apontar e mapear as áreas vulneráveis da cidade a riscos climáticos, especialmente inundações, incluindo o seu nível de profundidade das inundações para os eventos mais recentes. A metodologia aplicada permitiu reunir a experiência de especialistas locais e partes interessadas sobre a vulnerabilidade da cidade a riscos climáticos através de workshops com instituições governamentais e municipais, ONG, setor privado e organizações comunitárias que estão envolvidas em ação climática, WASH e planeamento urbano.",
+      "contribution": "Sob o guarda-chuva da Data4MOZ, como analista de sensoriamento remoto na instituição, o meu papel para o Space4All foi desde a recolha de dados de campo e validação de modelos, realizando sessões de validação de campo em Kisumo (Quénia) juntamente com membros da ITC-Universidade de Twente e liderando as atividades em Beira e Chimoio (Moçambique), envolvendo as comunidades locais e partes interessadas para sessões de validação de modelos e reunir subsídios através de observações de campo, caminhadas de transecto e mapeamento de assentamentos informais.",
+      "contact": "Para mais informações:",
+      "contactPerson": "Lorraine Trento Oliveira (Investigadora ITC-UT Space4all)"
+    }
+  },
+  "skills": {
+    "title": "Minhas Competências"
+  },
+  "courses": {
+    "title": "Meus Cursos"
+  },
+  "publications": {
+    "title": "Minhas Publicações"
+  },
+  "training": {
+    "title": "Formação e Transferência de Competências"
+  }
+}

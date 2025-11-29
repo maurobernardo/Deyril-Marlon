@@ -1,0 +1,492 @@
+'use client'
+
+import { createContext, useContext, useEffect, useState } from 'react'
+import type { Translations } from '@/types/translations'
+
+type Language = 'en' | 'pt'
+
+interface LanguageContextType {
+  language: Language
+  t: Translations
+  toggleLanguage: () => void
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+
+const translations: Record<Language, Translations> = {
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About Me',
+      projects: 'Projects',
+      skills: 'Skills',
+      courses: 'Courses',
+      publications: 'Publications',
+      training: 'Training',
+    },
+    home: {
+      name: 'Deyril Marlon Ibraimo',
+      title: 'Agronomist & Remote Sensing Analyst',
+      rotatingTexts: [
+        'Remote Sensing Analyst with over 3 years experience',
+        'GIS and Earth Observation Systems specialist',
+        'Agriculture, Forest and biodiversity monitoring expert',
+        'Participatory spatial data for community-based natural resources management',
+      ],
+      seeCV: 'See my CV',
+      iAm: "I'm",
+      downloadCV: 'Download CV',
+      contact: 'Contact Me',
+    },
+    about: {
+      title: 'About Me',
+      bio: 'A Remote Sensing Analyst with over 3 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project.',
+      professionalOverview: 'Professional Overview',
+      keyHighlights: 'Key Highlights',
+      highlights: {
+        specialized: 'Specialized in GIS and Earth Observation Systems',
+        passionate: 'Passionate about research design and MEL',
+        community: 'Community engagement and knowledge transfer expert',
+      },
+      quote: 'Every project is an opportunity to learn and grow, transforming data into actionable insights for sustainable development.',
+      expertiseAreas: {
+        remoteSensing: {
+          title: 'Remote Sensing & GIS',
+          description: 'Expert in satellite imagery analysis, Earth Observation systems, and geospatial data processing for environmental monitoring.',
+        },
+        agricultureForest: {
+          title: 'Agriculture & Forest Monitoring',
+          description: 'Specialized in biophysical parameter validation, crop monitoring, and forest biodiversity assessment using EO data.',
+        },
+        spatialData: {
+          title: 'Spatial Data Management',
+          description: 'Proficient in collecting, validating, and developing models from spatial data to support decision-making processes.',
+        },
+        communityEngagement: {
+          title: 'Community Engagement',
+          description: 'Experienced in participatory spatial data collection and empowering communities in natural resource management.',
+        },
+        mel: {
+          title: 'Monitoring & Evaluation',
+          description: 'Passionate about research design, MEL frameworks, and transforming project experiences into learning opportunities.',
+        },
+        researchDesign: {
+          title: 'Research Design',
+          description: 'Skilled in designing research methodologies that combine quantitative and qualitative approaches for comprehensive analysis.',
+        },
+      },
+    },
+    projects: {
+      title: 'My Projects',
+      viewDetails: 'View Details',
+      date: 'Date',
+      description: 'Description',
+      space4all: {
+        title: 'SPACE4ALL',
+        subtitle: 'Mapping climate vulnerabilities of slums by combining citizen science and earth observation technology',
+        date: '2024 - ongoing',
+        overview: 'SPACE4ALL is a project owned by the ITC- University of Twente and NWO (Dutch Research Council) that aims to unravel the climate vulnerability of slum communities in large and secondary cities by combining Citizen Science and Earth Observation methods. Earth Observation methods have the advantage of producing physical data for large areas and have shown their capability to map the physical aspects of slums. The project addresses the gaps by developing an innovative AI methodology by combining Citizen Science data and Earth Observation data with climate change data to locate hotspots of urban poor exposed to climate-related hazards (e.g., sea-level rise, storms, floods, extreme temperatures).',
+      },
+      bazaruto: {
+        title: 'Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area',
+        subtitle: 'Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area',
+        date: 'Oct. 2023 - Apr. 2024',
+        overviewText: 'The Greater Bazaruto KBA houses diverse marine ecosystems and because of its abundant biodiversity and diverse landscapes, this area holds significant ecological, economic, and societal importance, with tourism and fisheries serving as primary activities. This unique ecosystem sustains the livelihoods of local communities residing within the BANP and coastal communities in the mainland districts of Vilankulos, Inhassoro, and Govuro. However, the habitats and species face threats from illegal and unsustainable fishing practices, unregulated natural resource utilization.',
+      },
+      luisa: {
+        title: 'Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)',
+        subtitle: 'Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)',
+        date: '2024 - Oct. 2025',
+        overviewText: 'The long-term goal of "Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa" (LUISA) is to build the resilience of smallholder farmers and pastoralists in Africa to land use intensification resulting from rapid population growth and climate change. LUISA will achieve this goal by developing a satellite-driven decision-support platform from which policymakers can deliver more effective and reliable carbon monitoring across Africa. Human Appropriation of Net Primary Productivity (HANPP) is a key environmental indicator that helps decision-makers to understand the drivers and consequences of land use intensification on carbon dynamics on a pixel basis over large areas.',
+      },
+    },
+    skills: {
+      title: 'My Skills',
+      tools: 'Tools',
+      remoteSensing: 'Remote Sensing',
+      remoteSensingDescription: 'Expert in satellite imagery analysis, Earth Observation systems, and geospatial data processing for environmental monitoring.',
+      gis: 'Geographic Information Systems (GIS)',
+      gisDescription: 'Proficient in spatial data collection, analysis, and visualization using advanced GIS tools for mapping and decision-making.',
+      dataAnalysis: 'Data Analysis',
+      dataAnalysisDescription: 'Skilled in statistical analysis, data modeling, and interpretation of complex datasets to support research and decision-making processes.',
+      precisionAgriculture: 'Precision Agriculture',
+      precisionAgricultureDescription: 'Specialized in biophysical parameter validation, crop monitoring, and agricultural resource management using EO data and UAV technology.',
+      dataManagement: 'Data Management',
+      dataManagementDescription: 'Experienced in database design, data validation, and developing models that generate actionable insights for natural resource management.',
+      mel: 'Monitoring, Evaluation & Learning (MEL)',
+      melDescription: 'Passionate about research design, MEL frameworks, and transforming project experiences into learning opportunities for continuous improvement.',
+      quantitativeQualitative: 'Quantitative and Qualitative Research',
+      quantitativeQualitativeDescription: 'Skilled in designing research methodologies that combine quantitative and qualitative approaches for comprehensive analysis.',
+      naturalResourcesManagement: 'Natural Resources Management',
+      naturalResourcesManagementDescription: 'Experienced in measuring and analyzing biodiversity, forest monitoring, and supporting sustainable natural resource management decisions.',
+      sustainableLivelihood: 'Sustainable Livelihood',
+      sustainableLivelihoodDescription: 'Committed to developing solutions that support sustainable livelihoods and community resilience through data-driven approaches.',
+      communityEngagement: 'Community Engagement',
+      communityEngagementDescription: 'Experienced in participatory spatial data collection and empowering communities in natural resource management through knowledge transfer.',
+    },
+    courses: {
+      title: 'Courses',
+      coursesList: {
+        bscAgriculturalEngineering: 'BSc. Agricultural Engineering',
+        uavPrecisionAgriculture: 'UAV in Precision Agriculture',
+        advancedStatistics: 'Advanced Statistics and Experimental Design',
+        qualiQuantitativeResearch: 'Quali and Quantitative Research & Data Analysis',
+      },
+      institutions: {
+        eduardoMondlaneUniversity: 'Eduardo Mondlane University',
+        universityOfTwente: 'University of Twente',
+        centreOfExcellenceUEM: 'Centre of Excellence of Agrifood systems and Nutrition of UEM',
+        amazonasUniversity: 'Amazonas University',
+      },
+      locations: {
+        mozambique: 'Mozambique',
+        netherlands: 'Netherlands',
+        brazil: 'Brazil',
+      },
+    },
+    publications: {
+      title: 'Publications',
+      readMore: 'Read More',
+      publicationsList: {
+        exposedUnmapped: 'Exposed yet unmapped? Evidence of differential flood exposure in deprived urban areas using citizen science',
+        validationLeafArea: 'Validation of Leaf Area Index and Canopy Water Content through Sentinel-2 images in maize (Zea Mays L.) crop: Case study of Vilankulo district',
+      },
+      authors: {
+        oliveiraEtAl: 'Oliveira, L; Campomanes, E; Dijkstra, A; Belgiu, M; Adiku, P; Wanjiru, N; Lizian Onyango, L; Ibraimo, D; Flor, R; Van Den Bout, B; Zevenbergen, J & Kuffer, M',
+        ibraimoMananze: 'Ibraimo, D.M. & Mananze, S.E.',
+      },
+      journals: {
+        researchSquare: 'Research Square (Preprint)',
+        scienceCribe: 'ScienceCribe',
+      },
+    },
+    training: {
+      title: 'Training & Skills Transfers',
+    },
+    contact: {
+      title: 'Contact Me',
+      sendMessage: 'Send Message',
+      nome: 'First Name',
+      nomePlaceholder: 'Enter your first name',
+      apelido: 'Last Name',
+      apelidoPlaceholder: 'Enter your last name',
+      email: 'Email',
+      emailPlaceholder: 'your.email@example.com',
+      assunto: 'Subject',
+      assuntoPlaceholder: 'What is this about?',
+      contacto: 'Phone',
+      contactoPlaceholder: '+258 845 486 656',
+      mensagem: 'Message',
+      mensagemPlaceholder: 'Write your message here...',
+      send: 'Send Message',
+      sending: 'Sending...',
+      success: 'Sent!',
+      successMessage: 'Message sent successfully! We will contact you soon.',
+      errorMessage: 'Error sending message. Please try again later.',
+      connectWithUs: 'Connect with Us',
+      scheduleConsultation: 'Schedule a consultation or send us a message',
+      whatsappMessage: 'Hello! I would like to get in touch.',
+      followUs: 'Follow Us',
+      location: 'Location',
+      country: 'Mozambique',
+      province: 'Manica Province',
+      city: 'Chimoio',
+    },
+    footer: {
+      allRightsReserved: 'All rights reserved',
+    },
+    chatbot: {
+      openChatbot: 'Open chatbot',
+      closeChatbot: 'Close chatbot',
+      title: 'Ask about Deyril',
+      online: 'Online',
+      placeholder: 'Type your question...',
+      hint: 'Ask about experience, skills, projects, education, or contact info',
+      greeting: "Hello! I'm here to answer questions about Deyril Marlon Ibraimo. What would you like to know?",
+      defaultResponse: "I can help you learn about Deyril Marlon Ibraimo's experience, skills, projects, education, publications, and contact information. What would you like to know?",
+      typing: 'Typing...',
+    },
+    stats: {
+      title: 'Achievements & Impact',
+      yearsExperience: 'Years of Experience',
+      projectsCompleted: 'Projects Completed',
+      publications: 'Publications',
+      communitiesTrained: 'Communities Trained',
+      countriesWorked: 'Countries Worked',
+    },
+    space4all: {
+      title: 'SPACE4ALL',
+      subtitle: 'Mapping climate vulnerabilities of slums by combining citizen science and earth observation technology',
+      period: '2024 - ongoing',
+      overview: 'Overview',
+      overviewText: 'SPACE4ALL is a project owned by the ITC- University of Twente and NWO (Dutch Research Council) that aims to unravel the climate vulnerability of slum communities in large and secondary cities by combining Citizen Science and Earth Observation methods. Earth Observation methods have the advantage of producing physical data for large areas and have shown their capability to map the physical aspects of slums. The project addresses the gaps by developing an innovative AI methodology by combining Citizen Science data and Earth Observation data with climate change data to locate hotspots of urban poor exposed to climate-related hazards (e.g., sea-level rise, storms, floods, extreme temperatures).',
+      approach: 'This novel approach had the main purpose the development and training of deep learning models in order to map the degree of vulnerability of slum communities to climate-related risks across both large and secondary cities in Africa, to enhance the precision and the flooding early-warning capacity of the model.',
+      locations: 'The project was conducted in African cities, namely Kisumu and Nairobi in Kenya, Accra and Tema in Ghana and at last Beira and Chimoio in Mozambique, in partnership with African institutions such as Data4MOZ and Sdi Kenya.',
+      methodology: 'The study was conducted in a participatory format where the citizens were able to point and map the vulnerable areas of the city to climate hazards, especially flooding, including its depth level of the floods for the latest events.',
+      contribution: 'Contribution',
+      contributionText: 'Under the Data4MOZ umbrella, as remote sensing analyst in the institution, my role for Space4All went from the field data collect and model validation, conducting field validation sessions in Kisumo (Kenya) together with ITC-University of Twente members and leading the activities in Beira and Chimoio (Mozambique), engaging the local communities and stakeholders for model validation sessions and gather subsidies by field observations, transect walks and mapping informal settlements.',
+      institutions: 'Involved institutions',
+      furtherInfo: 'For further information',
+      contact: 'Lorraine Trento Oliveira (ITC-UT Space4all Researcher)',
+    },
+  },
+  pt: {
+    nav: {
+      home: 'Início',
+      about: 'Sobre Mim',
+      projects: 'Projetos',
+      skills: 'Competências',
+      courses: 'Cursos',
+      publications: 'Publicações',
+      training: 'Formação',
+    },
+    home: {
+      name: 'Deyril Marlon Ibraimo',
+      title: 'Agrónomo e Analista de Sensoriamento Remoto',
+      rotatingTexts: [
+        'Analista de Sensoriamento Remoto com mais de 3 anos de experiência',
+        'Especialista em Sistemas de SIG e Observação da Terra',
+        'Especialista em monitoramento de Agricultura, Floresta e biodiversidade',
+        'Dados espaciais participativos para gestão comunitária de recursos naturais',
+      ],
+      seeCV: 'Ver meu CV',
+      iAm: 'Sou',
+      downloadCV: 'Baixar CV',
+      contact: 'Entre em Contato',
+    },
+    about: {
+      title: 'Sobre Mim',
+      bio: 'Um Analista de Sensoriamento Remoto com mais de 3 anos de experiência. A minha área de especialização está focada em Sistemas de SIG e Observação da Terra (EO) para Agricultura, Floresta e monitoramento de biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronômicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades no monitoramento da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de pesquisa e monitoramento, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto.',
+      professionalOverview: 'Visão Profissional',
+      keyHighlights: 'Destaques Principais',
+      highlights: {
+        specialized: 'Especializado em Sistemas de SIG e Observação da Terra',
+        passionate: 'Apaixonado por design de pesquisa e MEL',
+        community: 'Especialista em engajamento comunitário e transferência de conhecimento',
+      },
+      quote: 'Cada projeto é uma oportunidade de aprender e crescer, transformando dados em insights acionáveis para o desenvolvimento sustentável.',
+      expertiseAreas: {
+        remoteSensing: {
+          title: 'Sensoriamento Remoto & SIG',
+          description: 'Especialista em análise de imagens de satélite, sistemas de Observação da Terra e processamento de dados geoespaciais para monitoramento ambiental.',
+        },
+        agricultureForest: {
+          title: 'Monitoramento de Agricultura & Floresta',
+          description: 'Especializado em validação de parâmetros biofísicos, monitoramento de culturas e avaliação de biodiversidade florestal usando dados de EO.',
+        },
+        spatialData: {
+          title: 'Gestão de Dados Espaciais',
+          description: 'Proficiente na recolha, validação e desenvolvimento de modelos a partir de dados espaciais para apoiar processos de tomada de decisão.',
+        },
+        communityEngagement: {
+          title: 'Engajamento Comunitário',
+          description: 'Experiente em coleta participativa de dados espaciais e capacitação de comunidades na gestão de recursos naturais.',
+        },
+        mel: {
+          title: 'Monitoramento & Avaliação',
+          description: 'Apaixonado por design de pesquisa, estruturas MEL e transformação de experiências de projeto em oportunidades de aprendizagem.',
+        },
+        researchDesign: {
+          title: 'Design de Pesquisa',
+          description: 'Habilidoso em projetar metodologias de pesquisa que combinam abordagens quantitativas e qualitativas para análise abrangente.',
+        },
+      },
+    },
+    projects: {
+      title: 'Meus Projetos',
+      viewDetails: 'Ver Detalhes',
+      date: 'Data',
+      description: 'Descrição',
+      space4all: {
+        title: 'SPACE4ALL',
+        subtitle: 'Mapeamento de vulnerabilidades climáticas de favelas combinando ciência cidadã e tecnologia de observação da terra',
+        date: '2024 - em curso',
+        overview: 'SPACE4ALL é um projeto da ITC- University of Twente e NWO (Conselho Holandês de Pesquisa) que visa desvendar a vulnerabilidade climática de comunidades de favelas em grandes e cidades secundárias combinando métodos de Ciência Cidadã e Observação da Terra. Os métodos de Observação da Terra têm a vantagem de produzir dados físicos para grandes áreas e mostraram sua capacidade de mapear os aspectos físicos das favelas. O projeto aborda as lacunas desenvolvendo uma metodologia inovadora de IA combinando dados de Ciência Cidadã e dados de Observação da Terra com dados de mudanças climáticas para localizar pontos críticos de pobres urbanos expostos a perigos relacionados ao clima (por exemplo, aumento do nível do mar, tempestades, inundações, temperaturas extremas).',
+      },
+      bazaruto: {
+        title: 'Mapeamento Participativo de Recursos Costeiros na Grande Área de Biodiversidade Chave de Bazaruto',
+        subtitle: 'Mapeamento Participativo de Recursos Costeiros na Grande Área de Biodiversidade Chave de Bazaruto',
+        date: 'Out. 2023 - Abr. 2024',
+        overviewText: 'A Grande Área de Biodiversidade Chave (KBA) de Bazaruto abriga diversos ecossistemas marinhos e, devido à sua abundante biodiversidade e paisagens diversas, esta área possui importância ecológica, económica e social significativa, com o turismo e a pesca servindo como atividades primárias. Este ecossistema único sustenta os meios de subsistência das comunidades locais que residem dentro do BANP e das comunidades costeiras nos distritos continentais de Vilankulos, Inhassoro e Govuro. No entanto, os habitats e espécies enfrentam ameaças de práticas de pesca ilegais e insustentáveis, utilização não regulamentada de recursos naturais.',
+      },
+      luisa: {
+        title: 'Potencial, Vulnerabilidade e Resiliência da Intensidade do Uso da Terra para Agricultura Sustentável em África (LUISA)',
+        subtitle: 'Potencial, Vulnerabilidade e Resiliência da Intensidade do Uso da Terra para Agricultura Sustentável em África (LUISA)',
+        date: '2024 - Out. 2025',
+        overviewText: 'O objetivo de longo prazo do "Potencial, Vulnerabilidade e Resiliência da Intensidade do Uso da Terra para Agricultura Sustentável em África" (LUISA) é construir a resiliência de pequenos agricultores e pastores em África à intensificação do uso da terra resultante do rápido crescimento populacional e mudanças climáticas. O LUISA alcançará este objetivo desenvolvendo uma plataforma de apoio à decisão baseada em satélites a partir da qual os formuladores de políticas podem fornecer monitorização de carbono mais eficaz e confiável em toda a África. A Apropriação Humana da Produtividade Primária Líquida (HANPP) é um indicador ambiental chave que ajuda os decisores a compreender os impulsionadores e consequências da intensificação do uso da terra na dinâmica do carbono numa base de pixel sobre grandes áreas.',
+      },
+    },
+    skills: {
+      title: 'Minhas Competências',
+      tools: 'Ferramentas',
+      remoteSensing: 'Sensoriamento Remoto',
+      remoteSensingDescription: 'Especialista em análise de imagens de satélite, sistemas de Observação da Terra e processamento de dados geoespaciais para monitoramento ambiental.',
+      gis: 'Sistemas de Informação Geográfica (SIG)',
+      gisDescription: 'Proficiente em coleta, análise e visualização de dados espaciais usando ferramentas SIG avançadas para mapeamento e tomada de decisões.',
+      dataAnalysis: 'Análise de Dados',
+      dataAnalysisDescription: 'Habilidoso em análise estatística, modelagem de dados e interpretação de conjuntos de dados complexos para apoiar processos de pesquisa e tomada de decisões.',
+      precisionAgriculture: 'Agricultura de Precisão',
+      precisionAgricultureDescription: 'Especializado em validação de parâmetros biofísicos, monitoramento de culturas e gestão de recursos agrícolas usando dados de EO e tecnologia UAV.',
+      dataManagement: 'Gestão de Dados',
+      dataManagementDescription: 'Experiente em design de bancos de dados, validação de dados e desenvolvimento de modelos que geram insights acionáveis para gestão de recursos naturais.',
+      mel: 'Monitoramento, Avaliação e Aprendizagem (MEL)',
+      melDescription: 'Apaixonado por design de pesquisa, estruturas MEL e transformação de experiências de projeto em oportunidades de aprendizagem para melhoria contínua.',
+      quantitativeQualitative: 'Investigação Quantitativa e Qualitativa',
+      quantitativeQualitativeDescription: 'Habilidoso em projetar metodologias de pesquisa que combinam abordagens quantitativas e qualitativas para análise abrangente.',
+      naturalResourcesManagement: 'Gestão de Recursos Naturais',
+      naturalResourcesManagementDescription: 'Experiente em medir e analisar biodiversidade, monitoramento florestal e apoiar decisões de gestão sustentável de recursos naturais.',
+      sustainableLivelihood: 'Meios de Subsistência Sustentáveis',
+      sustainableLivelihoodDescription: 'Comprometido com o desenvolvimento de soluções que apoiem meios de subsistência sustentáveis e resiliência comunitária através de abordagens baseadas em dados.',
+      communityEngagement: 'Engajamento Comunitário',
+      communityEngagementDescription: 'Experiente em coleta participativa de dados espaciais e capacitação de comunidades na gestão de recursos naturais através de transferência de conhecimento.',
+    },
+    courses: {
+      title: 'Cursos',
+      coursesList: {
+        bscAgriculturalEngineering: 'Licenciatura em Engenharia Agronómica',
+        uavPrecisionAgriculture: 'UAV em Agricultura de Precisão',
+        advancedStatistics: 'Estatística Avançada e Desenho Experimental',
+        qualiQuantitativeResearch: 'Investigação Qualitativa e Quantitativa & Análise de Dados',
+      },
+      institutions: {
+        eduardoMondlaneUniversity: 'Universidade Eduardo Mondlane',
+        universityOfTwente: 'Universidade de Twente',
+        centreOfExcellenceUEM: 'Centro de Excelência de Sistemas Agroalimentares e Nutrição da UEM',
+        amazonasUniversity: 'Universidade do Amazonas',
+      },
+      locations: {
+        mozambique: 'Moçambique',
+        netherlands: 'Países Baixos',
+        brazil: 'Brasil',
+      },
+    },
+    publications: {
+      title: 'Publicações',
+      readMore: 'Ler Mais',
+      publicationsList: {
+        exposedUnmapped: 'Exposto mas não mapeado? Evidência de exposição diferencial a inundações em áreas urbanas carentes usando ciência cidadã',
+        validationLeafArea: 'Validação do Índice de Área Foliar e Conteúdo de Água do Dossel através de imagens Sentinel-2 em culturas de milho (Zea Mays L.): Estudo de caso do distrito de Vilankulo',
+      },
+      authors: {
+        oliveiraEtAl: 'Oliveira, L; Campomanes, E; Dijkstra, A; Belgiu, M; Adiku, P; Wanjiru, N; Lizian Onyango, L; Ibraimo, D; Flor, R; Van Den Bout, B; Zevenbergen, J & Kuffer, M',
+        ibraimoMananze: 'Ibraimo, D.M. & Mananze, S.E.',
+      },
+      journals: {
+        researchSquare: 'Research Square (Preprint)',
+        scienceCribe: 'ScienceCribe',
+      },
+    },
+    training: {
+      title: 'Formação e Transferência de Competências',
+    },
+    contact: {
+      title: 'Entre em Contato',
+      sendMessage: 'Enviar Mensagem',
+      nome: 'Nome',
+      nomePlaceholder: 'Digite seu nome',
+      apelido: 'Apelido',
+      apelidoPlaceholder: 'Digite seu apelido',
+      email: 'Email',
+      emailPlaceholder: 'seu.email@exemplo.com',
+      assunto: 'Assunto',
+      assuntoPlaceholder: 'Sobre o que é?',
+      contacto: 'Contacto',
+      contactoPlaceholder: '+258 845 486 656',
+      mensagem: 'Mensagem',
+      mensagemPlaceholder: 'Escreva sua mensagem aqui...',
+      send: 'Enviar Mensagem',
+      sending: 'Enviando...',
+      success: 'Enviado!',
+      successMessage: 'Mensagem enviada com sucesso! Entraremos em contato em breve.',
+      errorMessage: 'Erro ao enviar mensagem. Por favor, tente novamente mais tarde.',
+      connectWithUs: 'Conecte-se Conosco',
+      scheduleConsultation: 'Agende uma consulta ou envie-nos uma mensagem',
+      whatsappMessage: 'Olá! Gostaria de entrar em contato.',
+      followUs: 'Siga-nos',
+      location: 'Localização',
+      country: 'Moçambique',
+      province: 'Província de Manica',
+      city: 'Chimoio',
+    },
+    footer: {
+      allRightsReserved: 'Todos os direitos reservados',
+    },
+    chatbot: {
+      openChatbot: 'Abrir chatbot',
+      closeChatbot: 'Fechar chatbot',
+      title: 'Pergunte sobre Deyril',
+      online: 'Online',
+      placeholder: 'Digite sua pergunta...',
+      hint: 'Pergunte sobre experiência, competências, projetos, formação ou informações de contato',
+      greeting: 'Olá! Estou aqui para responder perguntas sobre Deyril Marlon Ibraimo. O que gostaria de saber?',
+      defaultResponse: 'Posso ajudá-lo a conhecer mais sobre a experiência, competências, projetos, formação, publicações e informações de contato de Deyril Marlon Ibraimo. O que gostaria de saber?',
+      typing: 'Digitando...',
+    },
+    stats: {
+      title: 'Conquistas & Impacto',
+      yearsExperience: 'Anos de Experiência',
+      projectsCompleted: 'Projetos Completados',
+      publications: 'Publicações',
+      communitiesTrained: 'Comunidades Capacitadas',
+      countriesWorked: 'Países Trabalhados',
+    },
+    space4all: {
+      title: 'SPACE4ALL',
+      subtitle: 'Mapeamento de vulnerabilidades climáticas de favelas combinando ciência cidadã e tecnologia de observação da terra',
+      period: '2024 - em curso',
+      overview: 'Visão Geral',
+      overviewText: 'SPACE4ALL é um projeto da ITC- University of Twente e NWO (Conselho Holandês de Pesquisa) que visa desvendar a vulnerabilidade climática de comunidades de favelas em grandes e cidades secundárias combinando métodos de Ciência Cidadã e Observação da Terra. Os métodos de Observação da Terra têm a vantagem de produzir dados físicos para grandes áreas e mostraram sua capacidade de mapear os aspectos físicos das favelas. O projeto aborda as lacunas desenvolvendo uma metodologia inovadora de IA combinando dados de Ciência Cidadã e dados de Observação da Terra com dados de mudanças climáticas para localizar pontos críticos de pobres urbanos expostos a perigos relacionados ao clima (por exemplo, aumento do nível do mar, tempestades, inundações, temperaturas extremas).',
+      approach: 'Esta abordagem inovadora teve como principal objetivo o desenvolvimento e treinamento de modelos de aprendizado profundo para mapear o grau de vulnerabilidade das comunidades de favelas a riscos relacionados ao clima em grandes e cidades secundárias na África, para melhorar a precisão e a capacidade de alerta precoce de inundações do modelo.',
+      locations: 'O projeto foi realizado em cidades africanas, nomeadamente Kisumu e Nairobi no Quênia, Accra e Tema em Gana e por último Beira e Chimoio em Moçambique, em parceria com instituições africanas como Data4MOZ e Sdi Kenya.',
+      methodology: 'O estudo foi realizado em formato participativo onde os cidadãos puderam apontar e mapear as áreas vulneráveis da cidade a perigos climáticos, especialmente inundações, incluindo o nível de profundidade das inundações para os eventos mais recentes.',
+      contribution: 'Contribuição',
+      contributionText: 'Sob o guarda-chuva da Data4MOZ, como analista de sensoriamento remoto na instituição, meu papel para o Space4All foi desde a coleta de dados de campo e validação de modelos, conduzindo sessões de validação de campo em Kisumo (Quênia) junto com membros da ITC-University of Twente e liderando as atividades em Beira e Chimoio (Moçambique), envolvendo as comunidades locais e partes interessadas para sessões de validação de modelos e reunir subsídios por observações de campo, caminhadas de transecto e mapeamento de assentamentos informais.',
+      institutions: 'Instituições envolvidas',
+      furtherInfo: 'Para mais informações',
+      contact: 'Lorraine Trento Oliveira (Pesquisadora ITC-UT Space4all)',
+    },
+  },
+}
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguage] = useState<Language>('en')
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    const savedLanguage = localStorage.getItem('language') as Language
+    if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'pt')) {
+      setLanguage(savedLanguage)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (mounted) {
+      localStorage.setItem('language', language)
+    }
+  }, [language, mounted])
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'en' ? 'pt' : 'en')
+  }
+
+  // Always provide the context, even during SSR
+  // Use default language during SSR to avoid hydration mismatches
+  const currentLanguage = mounted ? language : 'en'
+  const currentTranslations = translations[currentLanguage] as Translations
+
+  return (
+    <LanguageContext.Provider value={{ language: currentLanguage, t: currentTranslations, toggleLanguage }}>
+      {children}
+    </LanguageContext.Provider>
+  )
+}
+
+export function useLanguage() {
+  const context = useContext(LanguageContext)
+  if (context === undefined) {
+    throw new Error('useLanguage must be used within a LanguageProvider')
+  }
+  return context
+}
+
