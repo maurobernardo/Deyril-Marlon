@@ -25,13 +25,14 @@ export default function About() {
       { threshold: 0.1 }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    const currentRef = sectionRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [])
@@ -164,7 +165,7 @@ export default function About() {
           >
             <BookOpen className="w-8 h-8 text-primary mx-auto mb-4" />
             <p className="text-lg italic text-gray-700 dark:text-gray-300 max-w-3xl">
-              "{t.about.quote}"
+              &ldquo;{t.about.quote}&rdquo;
             </p>
           </motion.div>
         </motion.div>

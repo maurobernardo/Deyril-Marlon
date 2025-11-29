@@ -291,7 +291,7 @@ export default function ProjectDetailPage() {
               }`} 
               style={{ transitionDelay: '300ms' }}
               onClick={() => {
-                const coverIndex = images.findIndex(img => img.src === coverImage)
+                const coverIndex = images.findIndex((img: { src: string; alt: string; label: string }) => img.src === coverImage)
                 setLightboxIndex(coverIndex >= 0 ? coverIndex : 0)
                 setLightboxOpen(true)
               }}

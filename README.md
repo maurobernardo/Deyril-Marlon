@@ -83,6 +83,21 @@ npm run build
 npm start
 ```
 
+## Deploy no Vercel
+
+Para hospedar seu portfólio no Vercel, consulte o guia completo em [DEPLOY_VERCEL.md](./DEPLOY_VERCEL.md).
+
+**Resumo rápido:**
+1. Crie uma conta no [Vercel](https://vercel.com)
+2. Conecte seu repositório GitHub
+3. Configure as variáveis de ambiente do EmailJS
+4. Faça o deploy!
+
+**Variáveis de ambiente necessárias:**
+- `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
+- `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
+- `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+
 ## Technologies Used
 
 - Next.js 14

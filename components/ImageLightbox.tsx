@@ -35,6 +35,32 @@ export default function ImageLightbox({
     setPosition({ x: 0, y: 0 })
   }, [initialIndex, isOpen])
 
+  const handleNext = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % images.length)
+    setZoom(1)
+    setPosition({ x: 0, y: 0 })
+  }, [images.length])
+
+  const handlePrevious = useCallback(() => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
+    setZoom(1)
+    setPosition({ x: 0, y: 0 })
+  }, [images.length])
+
+  const handleZoomIn = useCallback(() => {
+    setZoom((prev) => Math.min(prev + 0.25, 3))
+  }, [])
+
+  const handleZoomOut = useCallback(() => {
+    setZoom((prev) => {
+      const newZoom = Math.max(prev - 0.25, 1)
+      if (newZoom === 1) {
+        setPosition({ x: 0, y: 0 })
+      }
+      return newZoom
+    })
+  }, [])
+
   // Auto-play slideshow
   useEffect(() => {
     if (autoPlay && isOpen) {
@@ -67,33 +93,7 @@ export default function ImageLightbox({
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen, currentIndex, images.length])
-
-  const handleNext = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % images.length)
-    setZoom(1)
-    setPosition({ x: 0, y: 0 })
-  }, [images.length])
-
-  const handlePrevious = useCallback(() => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
-    setZoom(1)
-    setPosition({ x: 0, y: 0 })
-  }, [images.length])
-
-  const handleZoomIn = () => {
-    setZoom((prev) => Math.min(prev + 0.25, 3))
-  }
-
-  const handleZoomOut = () => {
-    setZoom((prev) => {
-      const newZoom = Math.max(prev - 0.25, 1)
-      if (newZoom === 1) {
-        setPosition({ x: 0, y: 0 })
-      }
-      return newZoom
-    })
-  }
+  }, [isOpen, handleNext, handlePrevious, handleZoomIn, handleZoomOut, onClose])
 
   const handleReset = () => {
     setZoom(1)
