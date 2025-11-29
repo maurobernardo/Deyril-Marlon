@@ -42,8 +42,9 @@ export default function Projects() {
       description: t.projects.space4all.overview.substring(0, 150) + '...',
       images: [
         '/projects/space4all/Cover.jpg',
+        '/projects/space4all/Image0.png',
         '/projects/space4all/Image1.png',
-        '/projects/space4all/Image2.JPG',
+        '/projects/space4all/image2.jpg',
         '/projects/space4all/Image3.jpg',
       ],
       video: '/projects/space4all/Video.MOV',

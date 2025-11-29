@@ -46,7 +46,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary-dark/0 group-hover:from-primary/5 group-hover:to-primary-dark/5 transition-all duration-500 z-0"></div>
 
       {/* Image Slider */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-64 overflow-hidden bg-gray-200 dark:bg-dark-surface">
         {project.images.map((image, index) => (
           <div
             key={index}
@@ -56,12 +56,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           >
             <Image
               src={image}
-              alt={`${project.title} - Image ${index + 1}`}
+              alt={`${project.title}${index === 0 ? ' - Cover' : ` - Image ${index}`}`}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               loading="lazy"
               quality={85}
+              unoptimized={image.toLowerCase().endsWith('.jpg') || image.toLowerCase().endsWith('.jpeg')}
             />
             {/* Gradient overlay on image */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
