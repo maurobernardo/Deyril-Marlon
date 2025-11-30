@@ -78,6 +78,44 @@ export interface Translations {
       date: string
       overviewText: string
     }
+    fisheriesBazaruto: {
+      title: string
+      subtitle: string
+      date: string
+      overview: string
+      overviewText: string
+      objective: string
+      methodology: string
+      results: string
+      appliedSkills: string
+      institutions: string
+      skills: {
+        biodiversityConservation: string
+        dataAnalysis: string
+        quantitativeResearch: string
+        qualitativeResearch: string
+        communityEngagement: string
+        naturalResourcesManagement: string
+      }
+    }
+    communityLedNRM: {
+      title: string
+      subtitle: string
+      date: string
+      overview: string
+      overviewText: string
+      objective: string
+      methodology: string
+      results: string
+      appliedSkills: string
+      institutions: string
+      skills: {
+        mel: string
+        sustainableLivelihood: string
+        gis: string
+        naturalResourcesManagement: string
+      }
+    }
   }
   skills: {
     title: string
