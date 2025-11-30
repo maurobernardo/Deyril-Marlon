@@ -343,3 +343,4 @@ Todas essas funcionalidades podem ser implementadas usando:
 
 Qual funcionalidade você gostaria de implementar primeiro? Posso ajudar a criar qualquer uma delas! 🚀
 
+

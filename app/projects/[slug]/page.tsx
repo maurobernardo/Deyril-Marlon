@@ -179,6 +179,116 @@ const projectData: Record<string, any> = {
     ],
     institutions: ['Data4MOZ', 'Faculty of Geoinformation Science and Earth Observation of University of Twente', 'Boku University', 'Gi-Sat', 'Vito Remote Sensing'],
   },
+  'fisheries-bazaruto': {
+    en: {
+      title: 'Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park',
+      subtitle: 'Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park',
+      period: '2023 - 2024',
+      overview: 'Overview',
+      overviewText: 'The fisheries value chain mapping and governance assessment aims at understanding the effects of the fisheries activities across the region, including the influence of community governance structures as the mechanisms for a participatory marine resources management.',
+      objective: 'The project seeks to deliver a comprehensive and community-informed assessment of the fisheries value chain in and around the Bazaruto Archipelago National Park. The overall objective was to generate evidence to inform more sustainable and inclusive fisheries management while supporting the socio-economic well-being of local communities. Recognizing the central role of fisheries as the primary economic activity in the region, the project adopted a nuanced mapping approach that captured the micro-dynamics of the value chain at the community level.',
+      methodology: 'This involved extensive sampling and site visits to all communities within and around BANP, enabling a detailed understanding of localized practices, key actors, and interactions across the fishing economy. The assessment also examined the multi-scalar dimensions of the fisheries value chain, acknowledging that fish products from the BANP region are not only consumed locally but also transported to major urban markets such as Maputo, Beira, and Chimoio. As such, the study incorporated both local and national-level actors to provide a comprehensive picture of how fish commodities move across regions and supply systems.',
+      results: 'Additionally, 17 community committees were created throughout the archipelago as a way to strengthen community management of natural resources. The committees were legalized and trained so that they can actively participate in decision-making processes that influence the daily lives of the communities.',
+      appliedSkills: 'Applied skills',
+      institutions: 'Involved institutions',
+      skills: {
+        biodiversityConservation: 'Biodiversity Conservation',
+        dataAnalysis: 'Data Analysis',
+        quantitativeResearch: 'Quantitative Research',
+        qualitativeResearch: 'Qualitative Research',
+        communityEngagement: 'Community Engagement',
+        naturalResourcesManagement: 'Natural Resources Management',
+      },
+    },
+    pt: {
+      title: 'Mapeamento da Cadeia de Valor da Pesca e Governança Comunitária no Parque Nacional do Arquipélago de Bazaruto',
+      subtitle: 'Mapeamento da Cadeia de Valor da Pesca e Governança Comunitária no Parque Nacional do Arquipélago de Bazaruto',
+      period: '2023 - 2024',
+      overview: 'Visão Geral',
+      overviewText: 'O mapeamento da cadeia de valor da pesca e a avaliação da governança visam compreender os efeitos das atividades pesqueiras em toda a região, incluindo a influência das estruturas de governança comunitária como mecanismos para uma gestão participativa dos recursos marinhos.',
+      objective: 'O projeto procura fornecer uma avaliação abrangente e informada pela comunidade da cadeia de valor da pesca dentro e ao redor do Parque Nacional do Arquipélago de Bazaruto. O objetivo geral foi gerar evidências para informar uma gestão pesqueira mais sustentável e inclusiva, apoiando o bem-estar socioeconómico das comunidades locais. Reconhecendo o papel central da pesca como atividade económica primária na região, o projeto adotou uma abordagem de mapeamento que capturou as micro-dinâmicas da cadeia de valor ao nível comunitário.',
+      methodology: 'Isso envolveu amostragem extensiva e visitas a todas as comunidades dentro e ao redor do BANP, permitindo uma compreensão detalhada das práticas localizadas, atores-chave e interações na economia pesqueira. A avaliação também examinou as dimensões multi-escalares da cadeia de valor da pesca, reconhecendo que os produtos pesqueiros da região do BANP não são apenas consumidos localmente, mas também transportados para grandes mercados urbanos como Maputo, Beira e Chimoio. Como tal, o estudo incorporou atores locais e nacionais para fornecer uma imagem abrangente de como as commodities pesqueiras se movem entre regiões e sistemas de abastecimento.',
+      results: 'Além disso, 17 comités comunitários foram criados em todo o arquipélago como forma de fortalecer a gestão comunitária dos recursos naturais. Os comités foram legalizados e treinados para que possam participar ativamente nos processos de tomada de decisão que influenciam a vida quotidiana das comunidades.',
+      appliedSkills: 'Habilidades aplicadas',
+      institutions: 'Instituições envolvidas',
+      skills: {
+        biodiversityConservation: 'Conservação da Biodiversidade',
+        dataAnalysis: 'Análise de Dados',
+        quantitativeResearch: 'Investigação Quantitativa',
+        qualitativeResearch: 'Investigação Qualitativa',
+        communityEngagement: 'Engajamento Comunitário',
+        naturalResourcesManagement: 'Gestão de Recursos Naturais',
+      },
+    },
+    coverImage: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Cover Image (1).jpg',
+    images: [
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Cover Image (1).jpg', alt: 'Cover Photo', label: 'Cover Photo' },
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 2 (1).jpg', alt: 'Image 1', label: 'Image 1' },
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 3 (1).jpg', alt: 'Final Image', label: 'Final Image' },
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 4.png', alt: 'Image 4', label: 'Image 4' },
+    ],
+    appliedSkills: [
+      { nameKey: 'biodiversityConservation', level: 5, color: '#3B82F6' },
+      { nameKey: 'dataAnalysis', level: 35, color: '#10B981' },
+      { nameKey: 'quantitativeResearch', level: 15, color: '#F59E0B' },
+      { nameKey: 'qualitativeResearch', level: 10, color: '#8B5CF6' },
+      { nameKey: 'communityEngagement', level: 15, color: '#EF4444' },
+      { nameKey: 'naturalResourcesManagement', level: 20, color: '#9333EA' },
+    ],
+    institutions: ['Data4MOZ', 'Bazaruto Archipelago National Park', 'African Parks', 'National Administration of Conservation Areas (ANAC)'],
+  },
+  'community-led-nrm': {
+    en: {
+      title: 'Community-Led Natural Resources Management through Participatory Spatial Data',
+      subtitle: 'Empowering Communities in the Gorongosa-Marromeu Complex for Sustainable Resource Management',
+      period: 'Aug 2024 - Apr 2025',
+      overview: 'Overview',
+      overviewText: 'This project, funded by USAID, arises from the observation of the fact that the communities in Mozambique, particularly in the central province of Sofala, serve as custodians of natural resources. Beyond their constitutional rights, these communities are entrusted with the following responsibilities: i) Protection and Conservation, II) Sustainability and iii) Livelihood improvement.',
+      objective: 'Carried out in collaboration with Gorongosa National Park and the respective district government, the project aimed to empower local communities in natural resources management through participatory spatial data techniques, including: Enhancing Community Engagement in the Wildlife Crime, through active participation of community members, particularly youth and women in the decision-making processes related to natural resource management and establish an inclusive framework that actively involves community members in resource management decision-making by leveraging data collected by the communities.',
+      methodology: 'The execution of the project was guided through the following activities: community mobilization and engagement, promotion of community capacity building and training sessions on community based natural resources management, participatory spatial mapping, data collection using mobile devices, identification and reporting of wildlife crime, and value chain mapping and opportunities.',
+      results: '25 members of local natural resource management committees are now able to use mobile devices to collect evidence and report environmental crimes in near real-time through a spatial data-based system, reinforcing their surveillance capabilities against environmental crimes at the community level. 5 communities from Gorongosa National Park buffer zone have been provided with knowledge about identifying alternative livelihoods and trained in biodiversity conservation and the sustainable use of natural resources.',
+      appliedSkills: 'Applied skills',
+      institutions: 'Involved institutions',
+      skills: {
+        mel: 'Monitoring, Evaluation & Learning',
+        sustainableLivelihood: 'Sustainable Livelihoods',
+        gis: 'GIS',
+        naturalResourcesManagement: 'Natural Resources Management',
+      },
+    },
+    pt: {
+      title: 'Gestão Comunitária de Recursos Naturais através de Dados Espaciais Participativos',
+      subtitle: 'Capacitação de Comunidades no Complexo Gorongosa-Marromeu para Gestão Sustentável de Recursos',
+      period: 'Ago 2024 - Abr 2025',
+      overview: 'Visão Geral',
+      overviewText: 'Este projeto, financiado pela USAID, surge da observação do fato de que as comunidades em Moçambique, particularmente na província central de Sofala, servem como guardiãs dos recursos naturais. Além dos seus direitos constitucionais, essas comunidades são incumbidas das seguintes responsabilidades: i) Proteção e Conservação, II) Sustentabilidade e iii) Melhoria dos meios de subsistência.',
+      objective: 'Realizado em colaboração com o Parque Nacional da Gorongosa e o governo distrital respectivo, o projeto visou capacitar as comunidades locais na gestão de recursos naturais através de técnicas de dados espaciais participativos, incluindo: Melhorar o Engajamento Comunitário no Crime contra a Vida Selvagem, através da participação ativa dos membros da comunidade, particularmente jovens e mulheres nos processos de tomada de decisão relacionados à gestão de recursos naturais e estabelecer uma estrutura inclusiva que envolva ativamente os membros da comunidade na tomada de decisões de gestão de recursos, aproveitando os dados coletados pelas comunidades.',
+      methodology: 'A execução do projeto foi guiada através das seguintes atividades: mobilização e engajamento comunitário, promoção de capacitação comunitária e sessões de treinamento sobre gestão comunitária de recursos naturais, mapeamento espacial participativo, coleta de dados usando dispositivos móveis, identificação e relato de crimes contra a vida selvagem, e mapeamento da cadeia de valor e oportunidades.',
+      results: '25 membros dos comités locais de gestão de recursos naturais agora são capazes de usar dispositivos móveis para coletar evidências e relatar crimes ambientais quase em tempo real através de um sistema baseado em dados espaciais, reforçando suas capacidades de vigilância contra crimes ambientais ao nível comunitário. 5 comunidades da zona tampão do Parque Nacional da Gorongosa receberam conhecimento sobre identificação de meios de subsistência alternativos e foram treinadas em conservação da biodiversidade e uso sustentável dos recursos naturais.',
+      appliedSkills: 'Habilidades aplicadas',
+      institutions: 'Instituições envolvidas',
+      skills: {
+        mel: 'Monitoramento, Avaliação e Aprendizagem',
+        sustainableLivelihood: 'Meios de Subsistência Sustentáveis',
+        gis: 'SIG',
+        naturalResourcesManagement: 'Gestão de Recursos Naturais',
+      },
+    },
+    coverImage: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg',
+    images: [
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg', alt: 'Cover Photo', label: 'Cover Photo' },
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 1.jpg', alt: 'Image 1', label: 'Image 1' },
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg', alt: 'Image 2', label: 'Image 2' },
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg', alt: 'Image 4', label: 'Image 4' },
+    ],
+    appliedSkills: [
+      { nameKey: 'mel', level: 60, color: '#3B82F6' },
+      { nameKey: 'sustainableLivelihood', level: 15, color: '#10B981' },
+      { nameKey: 'gis', level: 20, color: '#F59E0B' },
+      { nameKey: 'naturalResourcesManagement', level: 5, color: '#EF4444' },
+    ],
+    institutions: ['Data4MOZ', 'USAID', 'Gorongosa National Park', 'Cheringoma District Government'],
+  },
 }
 
 export default function ProjectDetailPage() {
@@ -276,7 +386,7 @@ export default function ProjectDetailPage() {
             <div className="flex items-center gap-3 mb-4">
               <Sparkles className="w-8 h-8 text-primary animate-pulse" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
-                {slug === 'bazaruto' || slug === 'luisa' ? t.title : `${t.title}: ${t.subtitle}`}
+                {slug === 'bazaruto' || slug === 'luisa' || slug === 'fisheries-bazaruto' || slug === 'community-led-nrm' ? t.title : `${t.title}: ${t.subtitle}`}
               </h1>
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark rounded-full mb-4"></div>
@@ -520,6 +630,7 @@ export default function ProjectDetailPage() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
@@ -551,6 +662,7 @@ export default function ProjectDetailPage() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
@@ -600,6 +712,288 @@ export default function ProjectDetailPage() {
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                     {t.results}
                   </h2>
+                </section>
+
+                {/* Applied Skills */}
+                {appliedSkills.length > 0 && (
+                  <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  }`} style={{ transitionDelay: '500ms' }}>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                      {t.appliedSkills}
+                    </h2>
+                    <PizzaChart skills={appliedSkills} />
+                  </section>
+                )}
+              </>
+            ) : slug === 'fisheries-bazaruto' ? (
+              /* Fisheries Bazaruto Project Structure */
+              <>
+                {/* Overview */}
+                <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`} style={{ transitionDelay: '400ms' }}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      {t.overview}
+                    </h2>
+                  </div>
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.overviewText}
+                  </p>
+                  
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.objective}
+                  </p>
+
+                  {/* Image 1 */}
+                  {images[1] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(1)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[1].src}
+                        alt={images[1].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[1].label}
+                      </div>
+                    </div>
+                  )}
+
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.methodology}
+                  </p>
+
+                  {/* Final Image */}
+                  {images[2] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(2)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[2].src}
+                        alt={images[2].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[2].label}
+                      </div>
+                    </div>
+                  )}
+                </section>
+
+                {/* Results */}
+                <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`} style={{ transitionDelay: '600ms' }}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center shadow-lg">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      Results
+                    </h2>
+                  </div>
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.results}
+                  </p>
+
+                  {/* Image 4 */}
+                  {images[3] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(3)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[3].src}
+                        alt={images[3].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[3].label}
+                      </div>
+                    </div>
+                  )}
+                </section>
+
+                {/* Applied Skills */}
+                {appliedSkills.length > 0 && (
+                  <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  }`} style={{ transitionDelay: '500ms' }}>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                      {t.appliedSkills}
+                    </h2>
+                    <PizzaChart skills={appliedSkills} />
+                  </section>
+                )}
+              </>
+            ) : slug === 'community-led-nrm' ? (
+              /* Community-Led NRM Project Structure */
+              <>
+                {/* Overview */}
+                <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`} style={{ transitionDelay: '400ms' }}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      {t.overview}
+                    </h2>
+                  </div>
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.overviewText}
+                  </p>
+                  
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.objective}
+                  </p>
+
+                  {/* Image 1 */}
+                  {images[1] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(1)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[1].src}
+                        alt={images[1].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[1].label}
+                      </div>
+                    </div>
+                  )}
+
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.methodology}
+                  </p>
+
+                  {/* Image 2 */}
+                  {images[2] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(2)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[2].src}
+                        alt={images[2].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[2].label}
+                      </div>
+                    </div>
+                  )}
+                </section>
+
+                {/* Results */}
+                <section className={`bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`} style={{ transitionDelay: '600ms' }}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center shadow-lg">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      Results
+                    </h2>
+                  </div>
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.results}
+                  </p>
+
+                  {/* Image 4 */}
+                  {images[3] && (
+                    <div 
+                      className="mb-6 relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-200/50 dark:border-primary/20 cursor-pointer group"
+                      onClick={() => {
+                        setLightboxIndex(3)
+                        setLightboxOpen(true)
+                      }}
+                    >
+                      <Image
+                        src={images[3].src}
+                        alt={images[3].alt}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-lg">
+                          Click to enlarge
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 dark:bg-primary/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        {images[3].label}
+                      </div>
+                    </div>
+                  )}
                 </section>
 
                 {/* Applied Skills */}
@@ -823,7 +1217,7 @@ export default function ProjectDetailPage() {
                 </h3>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {slug === 'bazaruto' || slug === 'luisa' ? (
+                {slug === 'bazaruto' || slug === 'luisa' || slug === 'fisheries-bazaruto' || slug === 'community-led-nrm' ? (
                   institutions.map((institution: string, index: number) => (
                     <div
                       key={index}

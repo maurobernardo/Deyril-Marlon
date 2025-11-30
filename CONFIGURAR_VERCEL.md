@@ -132,3 +132,4 @@ Se ainda tiver problemas:
 2. Verifique o arquivo `DEPLOY_VERCEL.md` para mais detalhes sobre deploy
 3. Certifique-se de que o serviço está ativo no EmailJS Dashboard
 
+

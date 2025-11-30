@@ -75,6 +75,33 @@ export default function Projects() {
         '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 4.jpg',
       ],
     },
+    {
+      id: 'fisheries-bazaruto',
+      title: t.projects.fisheriesBazaruto.title,
+      subtitle: t.projects.fisheriesBazaruto.subtitle,
+      date: t.projects.fisheriesBazaruto.date,
+      description: t.projects.fisheriesBazaruto.overviewText.substring(0, 150) + '...',
+      images: [
+        '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Cover Image (1).jpg',
+        '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 2 (1).jpg',
+        '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 3 (1).jpg',
+        '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 4.png',
+      ],
+    },
+    {
+      id: 'community-led-nrm',
+      title: t.projects.communityLedNRM.title,
+      subtitle: t.projects.communityLedNRM.subtitle,
+      date: t.projects.communityLedNRM.date,
+      description: t.projects.communityLedNRM.overviewText.substring(0, 150) + '...',
+      images: [
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 1.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg',
+      ],
+      video: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Video.mp4',
+    },
   ]
 
   return (
