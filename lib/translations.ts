@@ -167,7 +167,10 @@ export const translations = {
       }
     },
     training: {
-      title: "Training & Skills Transfers"
+      title: "Training & Skills Transfers",
+      educationQuote: "Education is the most powerful weapon you can use to change the world",
+      educationQuoteAuthor: "Nelson Mandela",
+      educationStatement: "Moved by the quote above, I use part of my time to share and/or transfer skills to the youth and the upcoming generations."
     },
     contact: {
       title: "Contact Me",
@@ -367,7 +370,10 @@ export const translations = {
       }
     },
     training: {
-      title: "Formação e Transferência de Competências"
+      title: "Formação e Transferência de Competências",
+      educationQuote: "A educação é a arma mais poderosa que você pode usar para mudar o mundo",
+      educationQuoteAuthor: "Nelson Mandela",
+      educationStatement: "Movido pela citação acima, uso parte do meu tempo para partilhar e/ou transferir competências para os jovens e as gerações vindouras."
     },
     contact: {
       title: "Contacte-me",

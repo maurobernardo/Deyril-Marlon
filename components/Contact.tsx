@@ -424,22 +424,22 @@ export default function Contact() {
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">10+</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">6</span>
                   <span>{t.stats.projectsCompleted}</span>
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">5+</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">3</span>
                   <span>{t.stats.publications}</span>
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">15+</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">5</span>
                   <span>{t.stats.communitiesTrained}</span>
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">3+</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">1</span>
                   <span>{t.stats.countriesWorked}</span>
                 </span>
               </div>

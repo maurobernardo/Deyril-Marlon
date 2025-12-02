@@ -115,10 +115,10 @@ export default function Training() {
           <div className="flex flex-col items-center text-center">
             <BookOpen className="w-12 h-12 text-primary-500 dark:text-primary-light mb-6" />
             <blockquote className="text-gray-800 dark:text-white text-xl md:text-2xl italic font-medium leading-relaxed mb-4">
-              &quot;Education is the most powerful weapon you can use to change the world&quot;
+              &quot;{t.training.educationQuote}&quot;
             </blockquote>
             <p className="text-primary-500 dark:text-primary-light text-base md:text-lg font-bold">
-              — Nelson Mandela
+              — {t.training.educationQuoteAuthor}
             </p>
           </div>
         </motion.div>
@@ -132,7 +132,7 @@ export default function Training() {
           className="text-center mb-12 max-w-4xl mx-auto"
         >
           <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed">
-            Moved by the quote above, I use part of my time to share and/or transfer skills to the youth and the upcoming generations.
+            {t.training.educationStatement}
           </p>
         </motion.div>
         
