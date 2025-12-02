@@ -428,7 +428,7 @@ export default function ProjectDetailPage() {
                     </h2>
               <div className="bg-white dark:bg-dark-card rounded-2xl p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
                   <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  {t.overviewText?.split('(https://www.itc.nl/)').map((part, index, array) => {
+                  {t.overviewText?.split('(https://www.itc.nl/)').map((part: string, index: number, array: string[]) => {
                     if (index < array.length - 1) {
                       return (
                         <span key={index}>
