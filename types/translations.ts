@@ -180,6 +180,9 @@ export interface Translations {
   }
   training: {
     title: string
+    educationQuote: string
+    educationQuoteAuthor: string
+    educationStatement: string
     koboToolbox: {
       title: string
       date: string
