@@ -311,6 +311,21 @@ export default function ProjectDetailPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const project = projectData[slug]
+  const t = project?.[language] || project?.en
+  const images = project?.images || []
+
+  useEffect(() => {
+    if (images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => 
+          prev === images.length - 1 ? 0 : prev + 1
+        )
+      }, 4000)
+
+      return () => clearInterval(interval)
+    }
+  }, [images.length])
+
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -328,21 +343,6 @@ export default function ProjectDetailPage() {
       </div>
     )
   }
-
-  const t = project[language] || project.en
-  const images = project.images || []
-
-  useEffect(() => {
-    if (images.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentImageIndex((prev) => 
-          prev === images.length - 1 ? 0 : prev + 1
-        )
-      }, 4000)
-
-      return () => clearInterval(interval)
-    }
-  }, [images.length])
 
   return (
     <main className="min-h-screen bg-white dark:bg-dark-bg relative overflow-hidden">

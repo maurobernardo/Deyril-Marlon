@@ -115,7 +115,7 @@ export default function Training() {
           <div className="flex flex-col items-center text-center">
             <BookOpen className="w-12 h-12 text-primary-500 dark:text-primary-light mb-6" />
             <blockquote className="text-gray-800 dark:text-white text-xl md:text-2xl italic font-medium leading-relaxed mb-4">
-              "Education is the most powerful weapon you can use to change the world"
+              &quot;Education is the most powerful weapon you can use to change the world&quot;
             </blockquote>
             <p className="text-primary-500 dark:text-primary-light text-base md:text-lg font-bold">
               — Nelson Mandela
