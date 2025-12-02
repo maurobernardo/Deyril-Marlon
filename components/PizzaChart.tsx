@@ -115,9 +115,6 @@ export default function PizzaChart({ skills }: PizzaChartProps) {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                     {skill.name}
                   </span>
-                  <span className="text-sm font-semibold text-gray-900 dark:text-white ml-4">
-                    {skill.level}%
-                  </span>
                 </div>
               </div>
             </div>
@@ -127,6 +124,8 @@ export default function PizzaChart({ skills }: PizzaChartProps) {
     </div>
   )
 }
+
+
 
 
 

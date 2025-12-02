@@ -20,9 +20,22 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const savedTheme = localStorage.getItem('theme') as Theme
     if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light')) {
       setTheme(savedTheme)
+      // Apply theme immediately
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     } else {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-      setTheme(prefersDark ? 'dark' : 'light')
+      const initialTheme = prefersDark ? 'dark' : 'light'
+      setTheme(initialTheme)
+      // Apply theme immediately
+      if (initialTheme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     }
   }, [])
 
@@ -30,15 +43,29 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (mounted) {
       if (theme === 'dark') {
         document.documentElement.classList.add('dark')
+        document.body.classList.add('dark')
       } else {
         document.documentElement.classList.remove('dark')
+        document.body.classList.remove('dark')
       }
       localStorage.setItem('theme', theme)
     }
   }, [theme, mounted])
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+    setTheme(prev => {
+      const newTheme = prev === 'dark' ? 'light' : 'dark'
+      // Apply immediately
+      if (newTheme === 'dark') {
+        document.documentElement.classList.add('dark')
+        document.body.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+        document.body.classList.remove('dark')
+      }
+      localStorage.setItem('theme', newTheme)
+      return newTheme
+    })
   }
 
   // Always provide the context, even before mount

@@ -108,3 +108,5 @@ Se você quiser manter o serviço Gmail OAuth atual funcionando, pode tentar:
 Mas a solução SMTP é geralmente mais estável e confiável para produção.
 
 
+
+

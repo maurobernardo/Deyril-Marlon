@@ -11,6 +11,7 @@ export interface Translations {
   home: {
     name: string
     title: string
+    welcomeMessage: string
     rotatingTexts: string[]
     seeCV: string
     iAm: string
@@ -179,6 +180,52 @@ export interface Translations {
   }
   training: {
     title: string
+    koboToolbox: {
+      title: string
+      date: string
+      description: string
+      students: string
+      providedBy: string
+      programs: string
+      programsList: string
+      outcome: string
+    }
+    googleEarthEngine: {
+      title: string
+      date: string
+      description: string
+      attendees: string
+      providedBy: string
+      examples: string
+      examplesList: string
+      participants: string
+    }
+    googleMyMaps: {
+      title: string
+      date: string
+      description: string
+      providedBy: string
+      locations: string
+      locationsList: string
+    }
+    sustainableNRM: {
+      title: string
+      date: string
+      description: string
+      communities: string
+      providedBy: string
+      communitiesList: string
+      outcomes: string
+    }
+    communityGovernance: {
+      title: string
+      date: string
+      description: string
+      committees: string
+      providedBy: string
+      contentTitle: string
+      content: string
+    }
   }
   contact: {
     title: string

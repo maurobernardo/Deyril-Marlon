@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from './LanguageProvider'
-import { Mail, Send, MessageSquare, User, FileText, Phone, Linkedin, Facebook, Instagram, MessageCircle, Sparkles, MapPin } from 'lucide-react'
+import { Mail, Send, MessageSquare, User, FileText, Phone, Linkedin, MessageCircle, MapPin } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 
@@ -176,11 +176,9 @@ export default function Contact() {
             }`}
           >
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
                 {t.contact.title}
               </h2>
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-full"></div>
           </div>
@@ -401,13 +399,13 @@ export default function Contact() {
               </a>
 
               {/* Location */}
-              <div className="group flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-dark-surface/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-all duration-300 transform hover:scale-105">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <div className="group flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-dark-surface/50 hover:bg-sky-50 dark:hover:bg-sky-900/20 transition-all duration-300 transform hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-cyan-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t.contact.location}</p>
-                  <p className="text-gray-900 dark:text-white font-semibold group-hover:text-purple-500 dark:group-hover:text-purple-400 transition-colors">
+                  <p className="text-gray-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">
                     {t.contact.city}, {t.contact.province}
                   </p>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -465,32 +463,6 @@ export default function Contact() {
                     <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <div className="absolute inset-0 rounded-full border-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-                </a>
-                <a
-                  href="https://www.facebook.com/deyril.marlon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500 transform hover:scale-125 hover:rotate-12"
-                  aria-label="Facebook"
-                >
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-                  <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 flex items-center justify-center border-2 border-blue-200 dark:border-blue-700/50 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-blue-500/50">
-                    <Facebook className="w-6 h-6 text-blue-500 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300" />
-                  </div>
-                  <div className="absolute inset-0 rounded-full border-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-                </a>
-                <a
-                  href="https://www.instagram.com/deyril_marlon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500 transform hover:scale-125 hover:rotate-12"
-                  aria-label="Instagram"
-                >
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-                  <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-orange-900/30 flex items-center justify-center border-2 border-pink-200 dark:border-pink-700/50 group-hover:border-pink-500 dark:group-hover:border-pink-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-pink-500/50">
-                    <Instagram className="w-6 h-6 text-pink-500 dark:text-pink-400 group-hover:scale-110 transition-transform duration-300" />
-                  </div>
-                  <div className="absolute inset-0 rounded-full border-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
                 </a>
                 <a
                   href={`https://wa.me/258845486656?text=${encodeURIComponent(t.contact.whatsappMessage)}`}

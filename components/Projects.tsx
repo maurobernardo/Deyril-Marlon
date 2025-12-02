@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './LanguageProvider'
 import ProjectCard from './ProjectCard'
-import { FolderKanban, Sparkles } from 'lucide-react'
+import { FolderKanban } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Projects() {
@@ -50,17 +50,18 @@ export default function Projects() {
       video: '/projects/space4all/Video.MOV',
     },
     {
-      id: 'bazaruto',
-      title: t.projects.bazaruto.title,
-      subtitle: t.projects.bazaruto.subtitle,
-      date: t.projects.bazaruto.date,
-      description: t.projects.bazaruto.overviewText.substring(0, 150) + '...',
+      id: 'community-led-nrm',
+      title: t.projects.communityLedNRM.title,
+      subtitle: t.projects.communityLedNRM.subtitle,
+      date: t.projects.communityLedNRM.date,
+      description: t.projects.communityLedNRM.overviewText.substring(0, 150) + '...',
       images: [
-        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 1_ Cover Image.jpg',
-        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 2 Workshop at District Level.JPG',
-        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 3 _ CCP Participatory Mapping.jpg',
-        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 1.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg',
+        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg',
       ],
+      video: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Video.mp4',
     },
     {
       id: 'luisa',
@@ -76,6 +77,19 @@ export default function Projects() {
       ],
     },
     {
+      id: 'bazaruto',
+      title: t.projects.bazaruto.title,
+      subtitle: t.projects.bazaruto.subtitle,
+      date: t.projects.bazaruto.date,
+      description: t.projects.bazaruto.overviewText.substring(0, 150) + '...',
+      images: [
+        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 1_ Cover Image.jpg',
+        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 2 Workshop at District Level.JPG',
+        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 3 _ CCP Participatory Mapping.jpg',
+        '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG',
+      ],
+    },
+    {
       id: 'fisheries-bazaruto',
       title: t.projects.fisheriesBazaruto.title,
       subtitle: t.projects.fisheriesBazaruto.subtitle,
@@ -87,20 +101,6 @@ export default function Projects() {
         '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 3 (1).jpg',
         '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 4.png',
       ],
-    },
-    {
-      id: 'community-led-nrm',
-      title: t.projects.communityLedNRM.title,
-      subtitle: t.projects.communityLedNRM.subtitle,
-      date: t.projects.communityLedNRM.date,
-      description: t.projects.communityLedNRM.overviewText.substring(0, 150) + '...',
-      images: [
-        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg',
-        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 1.jpg',
-        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg',
-        '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg',
-      ],
-      video: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Video.mp4',
     },
   ]
 
@@ -129,7 +129,6 @@ export default function Projects() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
           {t.projects.title}
         </h2>
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto rounded-full"></div>
           </div>

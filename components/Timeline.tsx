@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './LanguageProvider'
 import { motion } from 'framer-motion'
-import { Calendar, MapPin, Briefcase, GraduationCap, Award, Sparkles } from 'lucide-react'
+import { Calendar, MapPin, Briefcase, GraduationCap, Award } from 'lucide-react'
 
 export default function Timeline() {
   const { t } = useLanguage()
@@ -57,11 +57,9 @@ export default function Timeline() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Sparkles className="w-8 h-8 text-primary animate-pulse" />
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
               {t.timeline.title}
             </h2>
-            <Sparkles className="w-8 h-8 text-primary animate-pulse" />
           </div>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -72,99 +70,200 @@ export default function Timeline() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary-light to-primary-dark transform md:-translate-x-1/2"></div>
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary-light to-primary-dark transform md:-translate-x-1/2 opacity-60"></div>
 
-          {/* Timeline Items */}
-          <div className="space-y-12">
-            {timelineItems.map((item, index) => {
-              const isEven = index % 2 === 0
-              const IconComponent = getIconComponent(item.type)
+          {/* Timeline Items - Grouped in pairs */}
+          <div className="space-y-8 md:space-y-12">
+            {Array.from({ length: Math.ceil(timelineItems.length / 2) }).map((_, pairIndex) => {
+              const firstIndex = pairIndex * 2
+              const secondIndex = firstIndex + 1
+              const firstItem = timelineItems[firstIndex]
+              const secondItem = timelineItems[secondIndex]
 
               return (
-                <motion.div
-                  key={index}
-                  className={`relative flex items-center ${
-                    isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
-                  initial={{ opacity: 0, x: isEven ? -50 : 50 }}
-                  animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-10">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg border-4 border-white dark:border-dark-bg">
-                      <IconComponent className="w-8 h-8 text-white" />
+                <div key={pairIndex} className="relative flex flex-col md:flex-row items-start gap-6 md:gap-8 pb-8 md:pb-12">
+                  {/* Timeline Dot - Shared for the pair */}
+                  <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-20 top-1/2 -translate-y-1/2 hidden md:block">
+                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-xl border-4 border-white dark:border-dark-bg hover:scale-110 transition-transform duration-300">
+                      {(() => {
+                        const IconComponent = firstItem ? getIconComponent(firstItem.type) : (secondItem ? getIconComponent(secondItem.type) : Award)
+                        return <IconComponent className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                      })()}
                     </div>
+                    {/* Glow effect */}
+                    <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl -z-10"></div>
                   </div>
 
-                  {/* Content Card */}
-                  <div
-                    className={`w-full md:w-5/12 ml-24 md:ml-0 ${
-                      isEven ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
-                    }`}
-                  >
+                  {/* First Card (Left) */}
+                  {firstItem && (
                     <motion.div
-                      className="bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50"
-                      whileHover={{ scale: 1.02 }}
+                      className="relative w-full md:w-[calc(50%-20px)]"
+                      initial={{ opacity: 0, x: -50 }}
+                      animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.6, delay: firstIndex * 0.15 }}
                     >
-                      {/* Type Badge */}
-                      <div className="flex items-center gap-2 mb-3">
-                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-primary/20 to-primary-light/20 text-primary dark:text-primary-light">
-                          {item.typeLabel}
-                        </span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
-                          <Calendar className="w-4 h-4" />
-                          {item.period}
-                        </span>
+                      {/* Timeline Dot - Mobile */}
+                      <div className="absolute left-8 transform z-20 top-4 md:hidden">
+                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-xl border-4 border-white dark:border-dark-bg">
+                          {(() => {
+                            const IconComponent = getIconComponent(firstItem.type)
+                            return <IconComponent className="w-7 h-7 text-white" />
+                          })()}
+                        </div>
+                        <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl -z-10"></div>
                       </div>
 
-                      {/* Title */}
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                        {item.title}
-                      </h3>
-
-                      {/* Organization/Location */}
-                      {(item.organization || item.location) && (
-                        <div className="flex items-center gap-4 mb-4 text-gray-600 dark:text-gray-400">
-                          {item.organization && (
-                            <span className="flex items-center gap-1 text-sm">
-                              <Briefcase className="w-4 h-4" />
-                              {item.organization}
+                      {/* Content Card */}
+                      <div className="ml-24 md:ml-0 md:pr-6">
+                        <motion.div
+                          className="bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-2 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 h-full"
+                          whileHover={{ scale: 1.01 }}
+                        >
+                          {/* Type Badge */}
+                          <div className="flex items-center gap-3 mb-4">
+                            <span className="px-3 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-primary/20 to-primary-light/20 text-primary dark:text-primary-light border border-primary/30">
+                              {firstItem.typeLabel}
                             </span>
-                          )}
-                          {item.location && (
-                            <span className="flex items-center gap-1 text-sm">
-                              <MapPin className="w-4 h-4" />
-                              {item.location}
+                            <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                              <Calendar className="w-4 h-4" />
+                              {firstItem.period}
                             </span>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3 leading-tight">
+                            {firstItem.title}
+                          </h3>
+
+                          {/* Organization/Location */}
+                          {(firstItem.organization || firstItem.location) && (
+                            <div className="flex flex-wrap items-center gap-3 mb-4 text-gray-600 dark:text-gray-400">
+                              {firstItem.organization && (
+                                <span className="flex items-center gap-1.5 text-sm">
+                                  <Briefcase className="w-4 h-4 text-primary" />
+                                  {firstItem.organization}
+                                </span>
+                              )}
+                              {firstItem.location && (
+                                <span className="flex items-center gap-1.5 text-sm">
+                                  <MapPin className="w-4 h-4 text-primary" />
+                                  {firstItem.location}
+                                </span>
+                              )}
+                            </div>
                           )}
-                        </div>
-                      )}
 
-                      {/* Description */}
-                      {item.description && (
-                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                          {item.description}
-                        </p>
-                      )}
+                          {/* Description */}
+                          {firstItem.description && (
+                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5 text-sm md:text-base">
+                              {firstItem.description}
+                            </p>
+                          )}
 
-                      {/* Achievements/Highlights */}
-                      {item.highlights && item.highlights.length > 0 && (
-                        <ul className="space-y-2">
-                          {item.highlights.map((highlight, hIndex) => (
-                            <li
-                              key={hIndex}
-                              className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"
-                            >
-                              <span className="text-primary mt-1">▸</span>
-                              <span>{highlight}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
+                          {/* Achievements/Highlights */}
+                          {firstItem.highlights && firstItem.highlights.length > 0 && (
+                            <ul className="space-y-2.5">
+                              {firstItem.highlights.map((highlight, hIndex) => (
+                                <li
+                                  key={hIndex}
+                                  className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-400"
+                                >
+                                  <span className="text-primary mt-1.5 flex-shrink-0">▸</span>
+                                  <span className="leading-relaxed">{highlight}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </motion.div>
+                      </div>
                     </motion.div>
-                  </div>
-                </motion.div>
+                  )}
+
+                  {/* Second Card (Right) */}
+                  {secondItem && (
+                    <motion.div
+                      className="relative w-full md:w-[calc(50%-20px)] md:ml-auto"
+                      initial={{ opacity: 0, x: 50 }}
+                      animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.6, delay: secondIndex * 0.15 }}
+                    >
+                      {/* Timeline Dot - Mobile */}
+                      <div className="absolute left-8 transform z-20 top-4 md:hidden">
+                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-xl border-4 border-white dark:border-dark-bg">
+                          {(() => {
+                            const IconComponent = getIconComponent(secondItem.type)
+                            return <IconComponent className="w-7 h-7 text-white" />
+                          })()}
+                        </div>
+                        <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl -z-10"></div>
+                      </div>
+
+                      {/* Content Card */}
+                      <div className="ml-24 md:ml-0 md:pl-6">
+                        <motion.div
+                          className="bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 transform hover:-translate-y-2 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50 h-full"
+                          whileHover={{ scale: 1.01 }}
+                        >
+                          {/* Type Badge */}
+                          <div className="flex items-center gap-3 mb-4">
+                            <span className="px-3 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-primary/20 to-primary-light/20 text-primary dark:text-primary-light border border-primary/30">
+                              {secondItem.typeLabel}
+                            </span>
+                            <span className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+                              <Calendar className="w-4 h-4" />
+                              {secondItem.period}
+                            </span>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3 leading-tight">
+                            {secondItem.title}
+                          </h3>
+
+                          {/* Organization/Location */}
+                          {(secondItem.organization || secondItem.location) && (
+                            <div className="flex flex-wrap items-center gap-3 mb-4 text-gray-600 dark:text-gray-400">
+                              {secondItem.organization && (
+                                <span className="flex items-center gap-1.5 text-sm">
+                                  <Briefcase className="w-4 h-4 text-primary" />
+                                  {secondItem.organization}
+                                </span>
+                              )}
+                              {secondItem.location && (
+                                <span className="flex items-center gap-1.5 text-sm">
+                                  <MapPin className="w-4 h-4 text-primary" />
+                                  {secondItem.location}
+                                </span>
+                              )}
+                            </div>
+                          )}
+
+                          {/* Description */}
+                          {secondItem.description && (
+                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5 text-sm md:text-base">
+                              {secondItem.description}
+                            </p>
+                          )}
+
+                          {/* Achievements/Highlights */}
+                          {secondItem.highlights && secondItem.highlights.length > 0 && (
+                            <ul className="space-y-2.5">
+                              {secondItem.highlights.map((highlight, hIndex) => (
+                                <li
+                                  key={hIndex}
+                                  className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-400"
+                                >
+                                  <span className="text-primary mt-1.5 flex-shrink-0">▸</span>
+                                  <span className="leading-relaxed">{highlight}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </motion.div>
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
               )
             })}
           </div>
@@ -183,8 +282,9 @@ function getIconComponent(type: string) {
     case 'achievement':
       return Award
     default:
-      return Sparkles
+      return Award
   }
 }
+
 
 

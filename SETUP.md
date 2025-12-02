@@ -74,7 +74,7 @@ Depois, crie a página de detalhes em `app/projects/[id]/page.tsx` adicionando u
 ## Personalizar Cores
 
 As cores podem ser personalizadas no arquivo `tailwind.config.js`. A paleta atual usa:
-- Primary: Purple (#9333EA)
+- Primary: Light Blue (#00BFFF)
 - Dark mode: Background escuro (#0F0F0F)
 
 ## Executar o Projeto
@@ -85,6 +85,8 @@ npm run dev
 ```
 
 Acesse http://localhost:3000
+
+
 
 
 

@@ -16,7 +16,7 @@ export const translations = {
       title: "Agronomist & Remote Sensing Analyst",
       rotatingTexts: [
         "Remote Sensing Analyst with over 3 years experience",
-        "GIS and Earth Observation Systems specialist",
+        "GIS and Earth Observation Systems profissional",
         "Agriculture, Forest and biodiversity monitoring expert",
         "Participatory spatial data for community-based natural resources management"
       ],
@@ -43,7 +43,7 @@ export const translations = {
       expertiseAreas: {
         remoteSensing: {
           title: "Remote Sensing",
-          description: "GIS and Earth Observation Systems specialist"
+          description: "GIS and Earth Observation Systems profissional"
         },
         agricultureForest: {
           title: "Agriculture & Forest",

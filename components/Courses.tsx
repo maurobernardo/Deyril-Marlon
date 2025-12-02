@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './LanguageProvider'
-import { GraduationCap, Sparkles, MapPin } from 'lucide-react'
+import { GraduationCap, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Courses() {
@@ -57,7 +57,7 @@ export default function Courses() {
 
   const colors = [
     'from-blue-500 to-cyan-500',
-    'from-purple-500 to-pink-500',
+    'from-sky-500 to-cyan-500',
     'from-green-500 to-emerald-500',
     'from-amber-500 to-orange-500',
   ]
@@ -83,11 +83,9 @@ export default function Courses() {
             }`}
           >
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
           {t.courses.title}
         </h2>
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-full"></div>
           </div>

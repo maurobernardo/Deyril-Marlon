@@ -4,9 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './LanguageProvider'
 import {
   BookOpen,
-  Sparkles,
-  Award,
-  Lightbulb
+  Award
 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
@@ -64,21 +62,19 @@ export default function About() {
             }`}
           >
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
           {t.about.title}
         </h2>
-              <Sparkles className="w-8 h-8 text-primary animate-pulse" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto rounded-full"></div>
           </div>
         </div>
 
-        {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {/* Bio Card - Takes 2 columns */}
+        {/* Main Content */}
+        <div className="max-w-4xl mx-auto mb-12">
+          {/* Bio Card */}
           <motion.div
-            className="lg:col-span-2 bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50"
+            className="bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border border-gray-200/50 dark:border-primary/20 hover:border-primary/50"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -96,58 +92,15 @@ export default function About() {
                 <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary-dark rounded-full"></div>
               </div>
             </div>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
               {t.about.bio.split('. ')[0]}.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
               {t.about.bio.split('. ').slice(1, 3).join('. ')}.
             </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
               {t.about.bio.split('. ').slice(3).join('. ')}
-          </p>
-          </motion.div>
-
-          {/* Highlights Card */}
-          <motion.div
-            className="bg-gradient-to-br from-primary/10 to-primary-dark/10 dark:from-primary/20 dark:to-primary-dark/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-primary/30 dark:border-primary/40 hover:border-primary/60 transition-all duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ y: -4 }}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Lightbulb className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                {t.about.keyHighlights}
-              </h3>
-            </div>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {t.about.bio.split('. ')[0].split(' ').slice(0, 5).join(' ')}...
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {t.about.highlights.specialized}
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {t.about.highlights.passionate}
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {t.about.highlights.community}
-                </span>
-              </li>
-            </ul>
+            </p>
           </motion.div>
         </div>
 

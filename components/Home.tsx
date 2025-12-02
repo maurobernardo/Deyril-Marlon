@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from './LanguageProvider'
 import Image from 'next/image'
-import { Linkedin, Facebook, Instagram, MessageCircle, Download, Mail } from 'lucide-react'
+import { Linkedin, Download, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Home() {
@@ -20,9 +20,6 @@ export default function Home() {
 
   const socialLinks = {
     linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
-    facebook: 'https://facebook.com/deyril.marlon',
-    instagram: 'https://instagram.com/deyril.marlon',
-    whatsapp: `https://wa.me/258845486656?text=${encodeURIComponent(t.contact.whatsappMessage)}`,
   }
 
   return (
@@ -49,11 +46,23 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
-              {t.home.iAm} <span className="text-primary dark:text-primary-light">{t.home.name.split(' ')[0]}</span>
+              <span className="text-primary dark:text-primary-light">{t.home.name}</span>
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
               {t.home.title}
             </h2>
+          </motion.div>
+
+          {/* Welcome Message */}
+          <motion.div 
+            className="pt-2"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+              {t.home.welcomeMessage}
+            </p>
           </motion.div>
 
           {/* Rotating Text */}
@@ -96,51 +105,6 @@ export default function Home() {
               </div>
               {/* Pulse effect */}
               <div className="absolute inset-0 rounded-full border-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-            </motion.a>
-            <motion.a
-              href={socialLinks.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500"
-              title="Facebook"
-              whileHover={{ scale: 1.2, rotate: 12 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-              <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 flex items-center justify-center border-2 border-blue-200 dark:border-blue-700/50 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-blue-500/50">
-                <Facebook className="w-6 h-6 text-blue-500 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <div className="absolute inset-0 rounded-full border-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-            </motion.a>
-            <motion.a
-              href={socialLinks.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500"
-              title="Instagram"
-              whileHover={{ scale: 1.2, rotate: 12 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-              <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50 dark:from-pink-900/30 dark:via-purple-900/30 dark:to-orange-900/30 flex items-center justify-center border-2 border-pink-200 dark:border-pink-700/50 group-hover:border-pink-500 dark:group-hover:border-pink-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-pink-500/50">
-                <Instagram className="w-6 h-6 text-pink-500 dark:text-pink-400 group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <div className="absolute inset-0 rounded-full border-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-            </motion.a>
-            <motion.a
-              href={socialLinks.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500"
-              title="WhatsApp"
-              whileHover={{ scale: 1.2, rotate: 12 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-              <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 flex items-center justify-center border-2 border-green-200 dark:border-green-700/50 group-hover:border-green-500 dark:group-hover:border-green-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-green-500/50">
-                <MessageCircle className="w-6 h-6 text-green-500 dark:text-green-400 group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <div className="absolute inset-0 rounded-full border-2 border-green-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
             </motion.a>
           </motion.div>
 

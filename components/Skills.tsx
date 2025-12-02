@@ -51,7 +51,7 @@ export default function Skills() {
       description: t.skills.dataAnalysisDescription,
       icon: BarChart3,
       tools: ['Statistical Package for Social Sciences (SPSS)', 'R/Rstudio', 'STATA'],
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-sky-500 to-cyan-500',
     },
     {
       name: t.skills.precisionAgriculture,
