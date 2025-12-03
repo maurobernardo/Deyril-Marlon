@@ -366,7 +366,7 @@ export default function Contact() {
             <div className="space-y-6 mb-8">
               {/* Email */}
               <a
-                href="mailto:deyrilibraimo@gmail.com"
+                href="mailto:dm.ibraimo07@gmail.com"
                 className="group flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-dark-surface/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all duration-300 transform hover:scale-105"
               >
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -375,7 +375,7 @@ export default function Contact() {
                 <div className="flex-1">
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Email</p>
                   <p className="text-gray-900 dark:text-white font-semibold group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
-                    deyrilibraimo@gmail.com
+                    dm.ibraimo07@gmail.com
                   </p>
                 </div>
               </a>
