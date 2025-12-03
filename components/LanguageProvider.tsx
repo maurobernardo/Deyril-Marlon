@@ -393,19 +393,6 @@ const translations: Record<Language, Translations> = {
             'Project: Food security, agribusiness and resource use efficiency in agriculture based on Earth Observation system',
           ],
         },
-        {
-          type: 'work',
-          typeLabel: 'Work Experience',
-          title: 'Research Assistant',
-          period: '2022',
-          organization: 'Eduardo Mondlane University',
-          location: 'Mozambique',
-          description: 'Geospatial data acquisition and processing, remote sensing applied to precision agriculture.',
-          highlights: [
-            'Geospatial data acquisition (Copernicus and USGS database) and vector data processing',
-            'Remote Sensing applied to precision agriculture - Mapping and monitoring agricultural areas based on Sentinel-2 images using SNAP',
-          ],
-        },
       ],
     },
     space4all: {
@@ -801,19 +788,6 @@ const translations: Record<Language, Translations> = {
           highlights: [
             'Coleta, processamento e desenvolvimento de insights baseados em sensoriamento remoto para tomada de decisão em agricultura sustentável',
             'Projeto: Segurança alimentar, agronegócio e eficiência no uso de recursos na agricultura com base em sistema de Observação da Terra',
-          ],
-        },
-        {
-          type: 'work',
-          typeLabel: 'Experiência Profissional',
-          title: 'Assistente de Pesquisa',
-          period: '2022',
-          organization: 'Universidade Eduardo Mondlane',
-          location: 'Moçambique',
-          description: 'Aquisição e processamento de dados geoespaciais, sensoriamento remoto aplicado à agricultura de precisão.',
-          highlights: [
-            'Aquisição de dados geoespaciais (banco de dados Copernicus e USGS) e processamento de dados vetoriais',
-            'Sensoriamento Remoto aplicado à agricultura de precisão - Mapeamento e monitoramento de áreas agrícolas com base em imagens Sentinel-2 usando SNAP',
           ],
         },
       ],

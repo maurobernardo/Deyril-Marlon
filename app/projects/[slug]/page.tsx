@@ -89,7 +89,7 @@ const projectData: Record<string, any> = {
     },
     coverImage: '/projects/space4all/Cover.jpg',
     images: [
-      { src: '/projects/space4all/Image0.png', alt: 'SPACE4ALL Research Approach', position: 'afterApproach' },
+      { src: '/projects/space4all/Image0.png', alt: 'SPACE4ALL Research Approach', position: 'afterApproachText' },
       { src: '/projects/space4all/Image1.png', alt: 'Study countries of the project', position: 'afterLocations' },
       { src: '/projects/space4all/image2.jpg', alt: 'Participatory validation: Kisumo, January 2025', position: 'afterParticipatoryValidation' },
       { src: '/projects/space4all/Image3.jpg', alt: 'Participatory validation with stakeholders: Beira, February 2025', position: 'afterParticipatoryValidationStakeholders' },
@@ -769,13 +769,8 @@ export default function ProjectDetailPage() {
                         {t.approachText}
                       </p>
                     )}
-                    {t.locations && (
-                      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                        {t.locations}
-                      </p>
-                    )}
-                    {/* Image 0: SPACE4ALL Research Approach */}
-                    {images.find((img: any) => img.position === 'afterApproach') && (
+                    {/* Image 0: SPACE4ALL Research Approach - after approachText and before locations */}
+                    {images.find((img: any) => img.position === 'afterApproachText') && (
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -785,21 +780,26 @@ export default function ProjectDetailPage() {
                       >
                         <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
                           <Image
-                            src={images.find((img: any) => img.position === 'afterApproach')?.src}
-                            alt={images.find((img: any) => img.position === 'afterApproach')?.alt}
+                            src={images.find((img: any) => img.position === 'afterApproachText')?.src}
+                            alt={images.find((img: any) => img.position === 'afterApproachText')?.alt}
                             fill
                             className="object-cover"
                           />
                           {/* Caption overlay - always show if alt exists */}
-                          {images.find((img: any) => img.position === 'afterApproach')?.alt && (
+                          {images.find((img: any) => img.position === 'afterApproachText')?.alt && (
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
                               <p className="text-center text-white text-sm md:text-base italic font-medium">
-                                {images.find((img: any) => img.position === 'afterApproach')?.alt}
+                                {images.find((img: any) => img.position === 'afterApproachText')?.alt}
                               </p>
                             </div>
                           )}
                         </div>
                       </motion.div>
+                    )}
+                    {t.locations && (
+                      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        {t.locations}
+                      </p>
                     )}
                   </>
                 )}
