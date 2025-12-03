@@ -78,7 +78,7 @@ export default function Chatbot() {
         'Validation of Leaf Area Index and Canopy Water Content through Sentinel-2 images in maize crop',
       ],
       contact: {
-        email: 'deyrilibraimo@gmail.com',
+        email: 'dm.ibraimo07@gmail.com',
         phone: '+258 845 486 656',
         linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
       },
@@ -116,7 +116,7 @@ export default function Chatbot() {
         'Validação do Índice de Área Foliar e Conteúdo de Água do Dossel através de imagens Sentinel-2 em culturas de milho',
       ],
       contact: {
-        email: 'deyrilibraimo@gmail.com',
+        email: 'dm.ibraimo07@gmail.com',
         phone: '+258 845 486 656',
         linkedin: 'https://www.linkedin.com/in/déyril-m-ibraimo-6b0707230?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
       },

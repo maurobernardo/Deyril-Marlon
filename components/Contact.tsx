@@ -100,7 +100,7 @@ export default function Contact() {
           dateStyle: 'full',
           timeStyle: 'short'
         }),
-        to_email: 'deyrilibraimo@gmail.com',
+        to_email: 'dm.ibraimo07@gmail.com',
       }
 
       // Get environment variables
