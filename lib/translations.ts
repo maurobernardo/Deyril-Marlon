@@ -132,6 +132,7 @@ export const translations = {
     },
     courses: {
       title: "My Courses",
+      downloadCertificate: "Download Certificate",
       coursesList: {
         bscAgriculturalEngineering: "BSc. Agricultural Engineering",
         uavPrecisionAgriculture: "UAV in Precision Agriculture",
@@ -335,6 +336,7 @@ export const translations = {
     },
     courses: {
       title: "Meus Cursos",
+      downloadCertificate: "Baixar Certificado",
       coursesList: {
         bscAgriculturalEngineering: "Licenciatura em Engenharia Agronómica",
         uavPrecisionAgriculture: "UAV em Agricultura de Precisão",

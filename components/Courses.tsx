@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './LanguageProvider'
-import { GraduationCap, MapPin } from 'lucide-react'
+import { GraduationCap, MapPin, Download } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Courses() {
@@ -37,21 +37,25 @@ export default function Courses() {
       titleKey: 'bscAgriculturalEngineering',
       institutionKey: 'eduardoMondlaneUniversity',
       locationKey: 'mozambique',
+      certificate: null,
     },
     {
       titleKey: 'uavPrecisionAgriculture',
       institutionKey: 'universityOfTwente',
       locationKey: 'netherlands',
+      certificate: '/Certificados/UAV in Precision Agriculture.pdf',
     },
     {
       titleKey: 'advancedStatistics',
       institutionKey: 'centreOfExcellenceUEM',
       locationKey: 'mozambique',
+      certificate: '/Certificados/Advances Statistics and Experimental Design.pdf',
     },
     {
       titleKey: 'qualiQuantitativeResearch',
       institutionKey: 'amazonasUniversity',
       locationKey: 'brazil',
+      certificate: '/Certificados/Quali and Quantitative Research & Data Analysis.pdf',
     },
   ]
 
@@ -139,6 +143,18 @@ export default function Courses() {
                       </span>
                     </div>
                   </div>
+
+                  {/* Download Certificate Button */}
+                  {course.certificate && (
+                    <a
+                      href={course.certificate}
+                      download
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 transform hover:scale-105 font-semibold text-sm"
+                    >
+                      <Download className="w-4 h-4" />
+                      {t.courses.downloadCertificate}
+                    </a>
+                  )}
                 </div>
 
                 {/* Shine Effect */}
