@@ -116,7 +116,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <motion.a
-              href="/cv/Deyril Ibraimo Resume.pdf"
+              href="/Certificados/Deyril Ibraimo Resume.pdf"
               download
               className="group relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 transition-all duration-300 hover:from-primary-light hover:to-primary"
               whileHover={{ scale: 1.05 }}
