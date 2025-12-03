@@ -144,6 +144,7 @@ export interface Translations {
   }
   courses: {
     title: string
+    downloadCertificate: string
     coursesList: {
       bscAgriculturalEngineering: string
       uavPrecisionAgriculture: string
