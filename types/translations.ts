@@ -208,6 +208,7 @@ export interface Translations {
       title: string
       date: string
       description: string
+      communities: string
       providedBy: string
       locations: string
       locationsList: string

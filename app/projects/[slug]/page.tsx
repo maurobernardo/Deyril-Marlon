@@ -22,6 +22,7 @@ const institutionLogos: Record<string, string> = {
   'African Parks': '/Logos/African_Parks_logo.png',
   'ANAC': '/Logos/ANAC.jpg',
   'National Administration of Conservations Area (ANAC)': '/Logos/ANAC.jpg',
+  'National Administration of Conservation Areas (ANAC)': '/Logos/ANAC.jpg',
   'USAID': '/Logos/USAID.png',
   'Gorongosa National Park': '/Logos/Gorongosa National Park.png',
   'ESA': '/Logos/ESA_logo.png',
@@ -33,9 +34,11 @@ const institutionLogos: Record<string, string> = {
   'Vito Remote Sensing': '/Logos/Vito Remote Sensing.png',
   'Makerere University': '/Logos/Makerere_University.jpg',
   'Afrika Parks': '/Logos/African_Parks_logo.png',
-  'Conservation International (C.I.)': '/Logos/Centro de Excelencia em Sistemas Agroalimentares.jpg',
-  'Conservation International': '/Logos/Centro de Excelencia em Sistemas Agroalimentares.jpg',
-  'C.I.': '/Logos/Centro de Excelencia em Sistemas Agroalimentares.jpg',
+  'Conservation International (C.I.)': '/Logos/conervation.jpg',
+  'Conservation International': '/Logos/conervation.jpg',
+  'C.I.': '/Logos/conervation.jpg',
+  'Cheringoma District Government': '/Logos/Governo.jpg',
+  'Governo do Distrito de Cheringoma': '/Logos/Governo.jpg',
 }
 
 const projectData: Record<string, any> = {
@@ -45,16 +48,18 @@ const projectData: Record<string, any> = {
       subtitle: 'Mapping climate vulnerabilities of slums by combining citizen science and earth observation technology',
       period: '2024 - ongoing',
       overview: 'Overview',
-      overviewText: 'SPACE4ALL is a project owned by the ITC- University of Twente (https://www.itc.nl/) and NWO (Dutch Research Council) that aims to unravel the climate vulnerability of slum communities in large and secondary cities by combining Citizen Science and Earth Observation methods. Earth Observation methods have the advantage of producing physical data for large areas and have shown their capability to map the physical aspects of slums. The project addresses the gaps by developing an innovative AI methodology by combining Citizen Science data and Earth Observation data with climate change data to locate hotspots of urban poor exposed to climate-related hazards (e.g., sea-level rise, storms, floods, extreme temperatures).',
-      approach: 'This novel approach had the main purpose the development and training of deep learning models in order to map the degree of vulnerability of slum communities to climate-related risks across both large and secondary cities in Africa, to enhance the precision and the flooding early-warning capacity of the model.',
+      overviewText: 'SPACE4ALL is a project owned by the ITC- University of Twente (https://www.itc.nl/), funded by NWO (Dutch Research Council) with the overall objective of unraveling the climate vulnerabilities of deprived communities in large and secondary cities in the Sub-Saharan African (SSA) context by combining citizen science (CS) and earth observation (EO) techniques. The project will develop and test innovative methodologies to map hotspots of urban poor affected by floods, assess their vulnerabilities and livability perceptions. EO methods have the advantage of producing physical data for large areas and have shown their capability to map the physical aspects of slums. The project addresses the gaps by developing an innovative AI methodology by combining CS data and EO data with climate change data to locate hotspots of urban poor exposed to climate-related hazards (e.g., sea-level rise, storms, floods, extreme temperatures). In urban contexts with rapid expansion of unplanned settlements, the project aims at understanding the disparities in the living conditions of the most vulnerable population. They often occupy areas with inadequate infrastructure and service provision. The project requires high-quality reference spatial data to analyze and validate our results. To address this, the project team is commissioning a slum delineation study for the cities of Chimoio and Beira in Mozambique.',
+      approach: 'SPACE4ALL Research Approach',
+      approachText: 'This novel approach had the main purpose the development and training of deep learning models in order to map the degree of vulnerability of slum communities to climate-related risks across both large and secondary cities in Africa, to enhance the precision and the flooding early-warning capacity of the model.',
       locations: 'The project was conducted in African cities, namely Kisumu and Nairobi in Kenya, Accra and Tema in Ghana and at last Beira and Chimoio in Mozambique, in partnership with African institutions such as Data4MOZ and Sdi Kenya.',
-      methodology: 'The study was conducted in a participatory format where the citizens were able to point and map the vulnerable areas of the city to climate hazards, especially flooding, including its depth level of the floods for the latest events.',
-      appliedMethodology: 'The applied methodology allowed to gather local experts and stakeholders experience regarding the city\'s vulnerability to climate hazards through workshops with governmental and municipality institutions, NGO, private sector and community-based organizations that are engaged on climate action, WASH and urban planning.',
+      participatoryValidation: 'The study was conducted in a participatory format where the citizens were able to point and map the vulnerable areas of the city to climate hazards, especially flooding, including its depth level of the floods for the latest events.',
+      participatoryValidationStakeholders: 'The applied methodology allowed to gather local experts and stakeholders experience regarding the city\'s vulnerability to climate hazards through workshops with governmental and municipality institutions, NGO, private sector and community-based organizations that are engaged on climate action, WASH and urban planning.',
       contribution: 'Contribution',
-      contributionText: 'Under the Data4MOZ umbrella, as remote sensing analyst in the institution, my role for Space4All went from the field data collect and model validation, conducting field validation sessions in Kisumo (Kenya) together with ITC-University of Twente members and leading the activities in Beira and Chimoio (Mozambique), engaging the local communities and stakeholders for model validation sessions and gather subsidies by field observations, transect walks and mapping informal settlements.',
+      contributionText: 'Under the Data4MOZ umbrella, as remote sensing analyst in the institution, my contribution for Space4All extended into the field data collection and model validation, conducting field validation sessions in Kisumo (Kenya) together with ITC-University of Twente members and leading the activities in Beira and Chimoio (Mozambique), engaging the local communities and stakeholders for model validation sessions and gather subsidies by field observations, transect walks and mapping informal settlements.',
       preliminaryResults: 'Preliminary Results',
       preliminaryResultsText: 'Reports Available under request',
       requestReport: 'Request Report via Email',
+      requestReportEmail: 'deyrilibraimo@gmail.com',
       appliedSkills: 'Applied Skills',
       institutions: 'Involved institutions',
       furtherInfo: 'For further information',
@@ -65,16 +70,18 @@ const projectData: Record<string, any> = {
       subtitle: 'Mapeamento de vulnerabilidades climáticas de favelas combinando ciência cidadã e tecnologia de observação da terra',
       period: '2024 - em curso',
       overview: 'Visão Geral',
-      overviewText: 'SPACE4ALL é um projeto da ITC- University of Twente (https://www.itc.nl/) e NWO (Conselho Holandês de Pesquisa) que visa desvendar a vulnerabilidade climática de comunidades de favelas em grandes e cidades secundárias combinando métodos de Ciência Cidadã e Observação da Terra. Os métodos de Observação da Terra têm a vantagem de produzir dados físicos para grandes áreas e mostraram sua capacidade de mapear os aspectos físicos das favelas. O projeto aborda as lacunas desenvolvendo uma metodologia inovadora de IA combinando dados de Ciência Cidadã e dados de Observação da Terra com dados de mudanças climáticas para localizar pontos críticos de pobres urbanos expostos a perigos relacionados ao clima (por exemplo, aumento do nível do mar, tempestades, inundações, temperaturas extremas).',
-      approach: 'Esta abordagem inovadora teve como principal objetivo o desenvolvimento e treinamento de modelos de aprendizado profundo para mapear o grau de vulnerabilidade das comunidades de favelas a riscos relacionados ao clima em grandes e cidades secundárias na África, para melhorar a precisão e a capacidade de alerta precoce de inundações do modelo.',
+      overviewText: 'SPACE4ALL é um projeto da ITC- University of Twente (https://www.itc.nl/), financiado pela NWO (Conselho Holandês de Pesquisa) com o objetivo geral de desvendar as vulnerabilidades climáticas de comunidades carentes em grandes e cidades secundárias no contexto da África Subsaariana (SSA) combinando técnicas de ciência cidadã (CS) e observação da terra (EO). O projeto desenvolverá e testará metodologias inovadoras para mapear pontos críticos de pobres urbanos afetados por inundações, avaliar suas vulnerabilidades e percepções de habitabilidade. Os métodos de EO têm a vantagem de produzir dados físicos para grandes áreas e mostraram sua capacidade de mapear os aspectos físicos das favelas. O projeto aborda as lacunas desenvolvendo uma metodologia inovadora de IA combinando dados de CS e dados de EO com dados de mudanças climáticas para localizar pontos críticos de pobres urbanos expostos a perigos relacionados ao clima (por exemplo, aumento do nível do mar, tempestades, inundações, temperaturas extremas). Em contextos urbanos com rápida expansão de assentamentos não planejados, o projeto visa compreender as disparidades nas condições de vida da população mais vulnerável. Eles frequentemente ocupam áreas com infraestrutura e prestação de serviços inadequadas. O projeto requer dados espaciais de referência de alta qualidade para analisar e validar nossos resultados. Para abordar isso, a equipe do projeto está encomendando um estudo de delimitação de favelas para as cidades de Chimoio e Beira em Moçambique.',
+      approach: 'Abordagem de Pesquisa SPACE4ALL',
+      approachText: 'Esta abordagem inovadora teve como principal objetivo o desenvolvimento e treinamento de modelos de aprendizado profundo para mapear o grau de vulnerabilidade das comunidades de favelas a riscos relacionados ao clima em grandes e cidades secundárias na África, para melhorar a precisão e a capacidade de alerta precoce de inundações do modelo.',
       locations: 'O projeto foi realizado em cidades africanas, nomeadamente Kisumu e Nairobi no Quênia, Accra e Tema no Gana e por último Beira e Chimoio em Moçambique, em parceria com instituições africanas como Data4MOZ e Sdi Kenya.',
-      methodology: 'O estudo foi realizado em formato participativo onde os cidadãos puderam apontar e mapear as áreas vulneráveis da cidade a perigos climáticos, especialmente inundações, incluindo o nível de profundidade das inundações para os eventos mais recentes.',
-      appliedMethodology: 'A metodologia aplicada permitiu reunir a experiência de especialistas locais e partes interessadas sobre a vulnerabilidade da cidade a perigos climáticos através de workshops com instituições governamentais e municipais, ONG, setor privado e organizações comunitárias que estão envolvidas em ação climática, WASH e planeamento urbano.',
+      participatoryValidation: 'O estudo foi realizado em formato participativo onde os cidadãos puderam apontar e mapear as áreas vulneráveis da cidade a perigos climáticos, especialmente inundações, incluindo o nível de profundidade das inundações para os eventos mais recentes.',
+      participatoryValidationStakeholders: 'A metodologia aplicada permitiu reunir a experiência de especialistas locais e partes interessadas sobre a vulnerabilidade da cidade a perigos climáticos através de workshops com instituições governamentais e municipais, ONG, setor privado e organizações comunitárias que estão envolvidas em ação climática, WASH e planeamento urbano.',
       contribution: 'Contribuição',
-      contributionText: 'Sob o guarda-chuva da Data4MOZ, como analista de sensoriamento remoto na instituição, meu papel para o Space4All foi desde a coleta de dados de campo e validação de modelos, conduzindo sessões de validação de campo em Kisumo (Quênia) junto com membros da ITC-University of Twente e liderando as atividades em Beira e Chimoio (Moçambique), envolvendo as comunidades locais e partes interessadas para sessões de validação de modelos e reunir subsídios por observações de campo, caminhadas de transecto e mapeamento de assentamentos informais.',
+      contributionText: 'Sob o guarda-chuva da Data4MOZ, como analista de sensoriamento remoto na instituição, minha contribuição para o Space4All estendeu-se à coleta de dados de campo e validação de modelos, conduzindo sessões de validação de campo em Kisumo (Quênia) junto com membros da ITC-University of Twente e liderando as atividades em Beira e Chimoio (Moçambique), envolvendo as comunidades locais e partes interessadas para sessões de validação de modelos e reunir subsídios por observações de campo, caminhadas de transecto e mapeamento de assentamentos informais.',
       preliminaryResults: 'Resultados Preliminares',
       preliminaryResultsText: 'Relatórios disponíveis sob pedido',
       requestReport: 'Solicitar Relatório por Email',
+      requestReportEmail: 'deyrilibraimo@gmail.com',
       appliedSkills: 'Habilidades Aplicadas',
       institutions: 'Instituições envolvidas',
       furtherInfo: 'Para mais informações',
@@ -84,15 +91,13 @@ const projectData: Record<string, any> = {
     images: [
       { src: '/projects/space4all/Image0.png', alt: 'SPACE4ALL Research Approach', position: 'afterApproach' },
       { src: '/projects/space4all/Image1.png', alt: 'Study countries of the project', position: 'afterLocations' },
-      { src: '/projects/space4all/image2.jpg', alt: 'Participatory validation: Kisumo, January 2025', position: 'afterMethodology' },
-      { src: '/projects/space4all/Image3.jpg', alt: 'Participatory validation: Beira, February 2025', position: 'afterAppliedMethodology' },
-      { src: '/projects/space4all/image4.jpg', alt: 'Field Observation Kisumo, January 2025', position: 'afterContribution' },
+      { src: '/projects/space4all/image2.jpg', alt: 'Participatory validation: Kisumo, January 2025', position: 'afterParticipatoryValidation' },
+      { src: '/projects/space4all/Image3.jpg', alt: 'Participatory validation with stakeholders: Beira, February 2025', position: 'afterParticipatoryValidationStakeholders' },
     ],
     video: '/projects/space4all/Video.mp4',
     videoDescription: 'Transect Walk in Manyata B Neighbourhood, Kisumu, Kenya, January 2025',
     institutionsList: [
       'ITC-University of Twente',
-      'NWO',
       'Data4MOZ',
       'SDI Kenya',
     ],
@@ -109,7 +114,8 @@ const projectData: Record<string, any> = {
       period: 'Aug 2024 - Apr 2025',
       overview: 'Overview',
       overviewText: 'This project, funded by USAID, arises from the observation of the fact that the communities in Mozambique, particularly in the central province of Sofala, serve as custodians of natural resources. Beyond their constitutional rights, these communities are entrusted with the following responsibilities: i) Protection and Conservation, II) Sustainability and iii) Livelihood improvement.',
-      methodology: 'Carried out in collaboration with Gorongosa National Park and the respective district government, the project aimed to empower local communities in natural resources management through participatory spatial data techniques, including: Enhancing Community Engagement in the Wildlife Crime, through active participation of community members, particularly youth and women in the decision-making processes related to natural resource management and establish an inclusive framework that actively involves community members in resource management decision-making by leveraging data collected by the communities. The execution of the project was guided through the following activities: community mobilization and engagement, promotion of community capacity building and training sessions on community based natural resources management, participatory spatial mapping, data collection using mobile devices, identification and reporting of wildlife crime, and value chain mapping and opportunities.',
+      collaboration: 'Carried out in collaboration with Gorongosa National Park and the respective district government, the project aimed to empower local communities in natural resources management through participatory spatial data techniques, including: Enhancing Community Engagement in the Wildlife Crime, through active participation of community members, particularly youth and women in the decision-making processes related to natural resource management and establish an inclusive framework that actively involves community members in resource management decision-making by leveraging data collected by the communities.',
+      execution: 'The execution of the project was guided through the following activities: community mobilization and engagement, promotion of community capacity building and training sessions on community based natural resources management, participatory spatial mapping, data collection using mobile devices, identification and reporting of wildlife crime, and value chain mapping and opportunities.',
       results: 'Results',
       resultsText: '25 members of local natural resource management committees are now able to use mobile devices to collect evidence and report environmental crimes in near real-time through a spatial data-based system, reinforcing their surveillance capabilities against environmental crimes at the community level. 5 communities from Gorongosa National Park buffer zone have been provided with knowledge about identifying alternative livelihoods and trained in biodiversity conservation and the sustainable use of natural resources.',
       appliedSkills: 'Applied Skills',
@@ -121,7 +127,8 @@ const projectData: Record<string, any> = {
       period: 'Ago 2024 - Abr 2025',
       overview: 'Visão Geral',
       overviewText: 'Este projeto, financiado pela USAID, surge da observação do fato de que as comunidades em Moçambique, particularmente na província central de Sofala, servem como guardiãs dos recursos naturais. Além dos seus direitos constitucionais, essas comunidades são incumbidas das seguintes responsabilidades: i) Proteção e Conservação, II) Sustentabilidade e iii) Melhoria dos meios de subsistência.',
-      methodology: 'Realizado em colaboração com o Parque Nacional da Gorongosa e o governo distrital respectivo, o projeto visou capacitar as comunidades locais na gestão de recursos naturais através de técnicas de dados espaciais participativos, incluindo: Melhorar o Envolvimento Comunitário no Crime contra a Vida Selvagem, através da participação ativa de membros da comunidade, particularmente jovens e mulheres nos processos de tomada de decisão relacionados à gestão de recursos naturais e estabelecer uma estrutura inclusiva que envolva ativamente os membros da comunidade na tomada de decisão de gestão de recursos, aproveitando os dados coletados pelas comunidades. A execução do projeto foi guiada através das seguintes atividades: mobilização e envolvimento comunitário, promoção de capacitação comunitária e sessões de treinamento sobre gestão comunitária de recursos naturais, mapeamento espacial participativo, coleta de dados usando dispositivos móveis, identificação e relato de crimes contra a vida selvagem, e mapeamento da cadeia de valor e oportunidades.',
+      collaboration: 'Realizado em colaboração com o Parque Nacional da Gorongosa e o governo distrital respectivo, o projeto visou capacitar as comunidades locais na gestão de recursos naturais através de técnicas de dados espaciais participativos, incluindo: Melhorar o Envolvimento Comunitário no Crime contra a Vida Selvagem, através da participação ativa de membros da comunidade, particularmente jovens e mulheres nos processos de tomada de decisão relacionados à gestão de recursos naturais e estabelecer uma estrutura inclusiva que envolva ativamente os membros da comunidade na tomada de decisão de gestão de recursos, aproveitando os dados coletados pelas comunidades.',
+      execution: 'A execução do projeto foi guiada através das seguintes atividades: mobilização e envolvimento comunitário, promoção de capacitação comunitária e sessões de treinamento sobre gestão comunitária de recursos naturais, mapeamento espacial participativo, coleta de dados usando dispositivos móveis, identificação e relato de crimes contra a vida selvagem, e mapeamento da cadeia de valor e oportunidades.',
       results: 'Resultados',
       resultsText: '25 membros de comités locais de gestão de recursos naturais agora são capazes de usar dispositivos móveis para coletar evidências e relatar crimes ambientais quase em tempo real através de um sistema baseado em dados espaciais, reforçando suas capacidades de vigilância contra crimes ambientais ao nível comunitário. 5 comunidades da zona tampão do Parque Nacional da Gorongosa receberam conhecimento sobre a identificação de meios de subsistência alternativos e foram treinadas em conservação da biodiversidade e uso sustentável dos recursos naturais.',
       appliedSkills: 'Habilidades Aplicadas',
@@ -130,8 +137,8 @@ const projectData: Record<string, any> = {
     coverImage: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image.jpg',
     images: [
       { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 1.jpg', alt: 'Project Launch ceremony (Inhaminga, August 2024)', position: 'afterOverview', showCaption: true },
-      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg', alt: '', position: 'afterMethodology', showCaption: false },
-      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg', alt: '', position: 'afterResults', showCaption: false },
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 2.jpg', alt: '', position: 'afterCollaboration', showCaption: false },
+      { src: '/projects/Community-Led Natural Resources Management trough Participatory Spatial Data/Image 4.jpg', alt: '', position: 'afterExecution', showCaption: false },
     ],
     institutionsList: [
       'Data4MOZ',
@@ -153,7 +160,10 @@ const projectData: Record<string, any> = {
       period: '2024 - Oct. 2025',
       overview: 'Overview',
       overviewText: 'Led by European Space Agency (ESA), This project results from a consortium amongst several institutions engaged in Spatial Data-based solutions in Africa and Europe. The long-term goal of "Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa" (LUISA) is to build the resilience of smallholder farmers and pastoralists in Africa to land use intensification resulting from rapid population growth and climate change. LUISA will achieve this goal by developing a satellite-driven decision-support platform from which policymakers can deliver more effective and reliable carbon monitoring across Africa. Human Appropriation of Net Primary Productivity (HANPP) is a key environmental indicator that helps decision-makers to understand the drivers and consequences of land use intensification on carbon dynamics on a pixel basis over large areas. The African land system is undergoing rapid changes and novel approaches are needed to understand the drivers and consequences of land use intensification, as well as the dependency, vulnerability and resilience caused by climate change. It is paramount to understand Africa\'s potential, vulnerability and resilience for a sustainable agriculture, defined as one that is low-carbon, resource-efficient, and socially inclusive. Therefore, The LUISA Project developed and is implementing new methods, effectively linking and integrating modelling, satellite EO products (Sentinels, Explorers, Meteo missions, ESA-CCI) and dataset with in-situ, stakeholder-generated, social-economic data to advance the estimation of continental Africa potential, vulnerability and resilience for a sustainable agriculture.',
-      methodology: 'For in situ data collection to train the model, four use cases were developed in Senegal (Silvopastoral area), Mozambique (Beira Agriculture Growth Corridor), Ethiopia (Highland region of Lake Tana) and Uganda (Mount Elgon Agroforestry Zone). For Mozambique Use case, Mixed research was conducted to collect data to support the remote sensing-based platform for biomass monitoring through HANPP. The qualitative research was based on consultations with stakeholders in the Beira Agricultural Growth Corridor, through guided interviews with key informants. Additionally, Community consultations were carried out through focus group discussions separately with smallholder farmers and forestry operators. Quantitative research was conducted with forestry operators and timber vendors to understand the dynamics of the forestry extraction and agricultural sectors in the region and the factors that contribute to the occurrence of biomass in the region. Databases from private companies and from the provincial government were also gathered.',
+      useCases: 'For in situ data collection to train the model, four use cases were developed in Senegal (Silvopastoral area), Mozambique (Beira Agriculture Growth Corridor), Ethiopia (Highland region of Lake Tana) and Uganda (Mount Elgon Agroforestry Zone).',
+      mozambiqueUseCase: 'For Mozambique Use case, Mixed research was conducted to collect data to support the remote sensing-based platform for biomass monitoring through HANPP. The qualitative research was based on consultations with stakeholders in the Beira Agricultural Growth Corridor, through guided interviews with key informants.',
+      communityConsultations: 'Additionally, Community consultations were carried out through focus group discussions separately with smallholder farmers and forestry operators.',
+      quantitativeResearch: 'Quantitative research was conducted with forestry operators and timber vendors to understand the dynamics of the forestry extraction and agricultural sectors in the region and the factors that contribute to the occurrence of biomass in the region. Databases from private companies and from the provincial government were also gathered.',
       results: 'Results',
       resultsText: 'This mixed approach allowed the development of a robust platform with essential parameters to monitor the HANPP and biomass measurement at continental level.',
       appliedSkills: 'Applied Skills',
@@ -167,7 +177,10 @@ const projectData: Record<string, any> = {
       period: '2024 - Out. 2025',
       overview: 'Visão Geral',
       overviewText: 'Liderado pela Agência Espacial Europeia (ESA), Este projeto resulta de um consórcio entre várias instituições envolvidas em soluções baseadas em Dados Espaciais em África e Europa. O objetivo de longo prazo do "Potencial, Vulnerabilidade e Resiliência da Intensidade do Uso da Terra para Agricultura Sustentável em África" (LUISA) é construir a resiliência de pequenos agricultores e pastores em África à intensificação do uso da terra resultante do rápido crescimento populacional e mudanças climáticas. O LUISA alcançará este objetivo desenvolvendo uma plataforma de apoio à decisão baseada em satélites a partir da qual os formuladores de políticas podem fornecer monitorização de carbono mais eficaz e confiável em toda a África. A Apropriação Humana da Produtividade Primária Líquida (HANPP) é um indicador ambiental chave que ajuda os decisores a compreender os impulsionadores e consequências da intensificação do uso da terra na dinâmica do carbono numa base de pixel sobre grandes áreas. O sistema de uso da terra africano está a passar por mudanças rápidas e são necessárias abordagens novas para compreender os impulsionadores e consequências da intensificação do uso da terra, bem como a dependência, vulnerabilidade e resiliência causadas pelas mudanças climáticas. É fundamental compreender o potencial, vulnerabilidade e resiliência de África para uma agricultura sustentável, definida como uma que é de baixo carbono, eficiente em recursos e socialmente inclusiva. Portanto, o Projeto LUISA desenvolveu e está a implementar novos métodos, ligando e integrando efetivamente modelação, produtos de EO por satélite (Sentinels, Explorers, missões Meteo, ESA-CCI) e conjunto de dados com dados socioeconómicos in-situ, gerados por partes interessadas, para avançar a estimativa do potencial, vulnerabilidade e resiliência da África continental para uma agricultura sustentável.',
-      methodology: 'Para a recolha de dados in situ para treinar o modelo, foram desenvolvidos quatro casos de uso no Senegal (área silvopastoril), Moçambique (Corredor de Crescimento Agrícola da Beira), Etiópia (região montanhosa do Lago Tana) e Uganda (Zona Agroflorestal do Monte Elgon). Para o caso de uso de Moçambique, foi conduzida uma investigação mista para recolher dados para apoiar a plataforma baseada em sensoriamento remoto para monitorização de biomassa através do HANPP. A investigação qualitativa baseou-se em consultas com partes interessadas no Corredor de Crescimento Agrícola da Beira, através de entrevistas guiadas com informantes-chave. Além disso, foram realizadas consultas comunitárias através de discussões de grupos focais separadamente com pequenos agricultores e operadores florestais. Foi conduzida investigação quantitativa com operadores florestais e vendedores de madeira para compreender a dinâmica dos setores de extração florestal e agrícola na região e os fatores que contribuem para a ocorrência de biomassa na região. Bases de dados de empresas privadas e do governo provincial também foram recolhidas.',
+      useCases: 'Para a recolha de dados in situ para treinar o modelo, foram desenvolvidos quatro casos de uso no Senegal (área silvopastoril), Moçambique (Corredor de Crescimento Agrícola da Beira), Etiópia (região montanhosa do Lago Tana) e Uganda (Zona Agroflorestal do Monte Elgon).',
+      mozambiqueUseCase: 'Para o caso de uso de Moçambique, foi conduzida uma investigação mista para recolher dados para apoiar a plataforma baseada em sensoriamento remoto para monitorização de biomassa através do HANPP. A investigação qualitativa baseou-se em consultas com partes interessadas no Corredor de Crescimento Agrícola da Beira, através de entrevistas guiadas com informantes-chave.',
+      communityConsultations: 'Além disso, foram realizadas consultas comunitárias através de discussões de grupos focais separadamente com pequenos agricultores e operadores florestais.',
+      quantitativeResearch: 'Foi conduzida investigação quantitativa com operadores florestais e vendedores de madeira para compreender a dinâmica dos setores de extração florestal e agrícola na região e os fatores que contribuem para a ocorrência de biomassa na região. Bases de dados de empresas privadas e do governo provincial também foram recolhidas.',
       results: 'Resultados',
       resultsText: 'Esta abordagem mista permitiu o desenvolvimento de uma plataforma robusta com parâmetros essenciais para monitorizar o HANPP e a medição de biomassa ao nível continental.',
       appliedSkills: 'Habilidades Aplicadas',
@@ -178,9 +191,9 @@ const projectData: Record<string, any> = {
     coverImage: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/IMAGE 1 Cover .jpg',
     images: [
       { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 2.jpg', alt: 'Kick-off visit to the district economic activities service (Nhamatanda, June 2024)', position: 'afterOverview' },
-      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 3.jpg', alt: 'KII Section with Mozambique Sugar-cane company- Tongaat Hulett S.A (Mafambisse, July 2024)', position: 'afterMethodology' },
-      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 4.jpg', alt: 'Focus Group Discussion With Nhampoca Community (Nhamatanda, July 2024)', position: 'afterMethodology' },
-      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 5.jpg', alt: 'Data collection at EN6. with wood, charcoal and timber vendors (Tica, July 2024)', position: 'afterMethodology' },
+      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 3.jpg', alt: 'KII Section with Mozambique Sugar-cane company- Tongaat Hulett S.A (Mafambisse, July 2024)', position: 'afterMozambiqueUseCase' },
+      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 4.jpg', alt: 'Focus Group Discussion With Nhampoca Community (Nhamatanda, July 2024)', position: 'afterCommunityConsultations' },
+      { src: '/projects/Land Use Intensity\'s Potential, Vulnerability and Resilience for Sustainable Agriculture in Africa (LUISA)/Image 5.jpg', alt: 'Data collection at EN6. with wood, charcoal and timber vendors (Tica, July 2024)', position: 'afterQuantitativeResearch' },
     ],
     institutionsList: [
       'Data4MOZ',
@@ -205,15 +218,13 @@ const projectData: Record<string, any> = {
       period: 'Oct. 2023 - Apr. 2024',
       overview: 'Overview',
       overviewText: 'The Greater Bazaruto KBA houses diverse marine ecosystems and because of its abundant biodiversity and diverse landscapes, this area holds significant ecological, economic, and societal importance, with tourism and fisheries serving as primary activities. This unique ecosystem sustains the livelihoods of local communities residing within the BANP and coastal communities in the mainland districts of Vilankulos, Inhassoro, and Govuro. However, the habitats and species face threats from illegal and unsustainable fishing practices, unregulated natural resource utilization. Therefore, due to aforementioned challenges and the imperative to enhance decision making for biodiversity conservation and community engagement, this research was conducted, aiming to i) geographically map locations that are regarded as crucial for providing essential resources and services for both island and mainland communities, ii) Provide a comprehensive understanding of how these significant sites are currently being utilized and by whom within the community, iii) Identify which types of usage are deemed sustainable and harmonious, as opposed to those that may generate conflicts, iv) Investigate and document the perspectives of local communities on the anticipated changes in these areas over the next decade, including alterations in distribution and utilization patterns resulting from climate change and other environmental factors.',
-      methodology: 'The study was conducted through a participatory spatial mapping in three different levels/categories, namely: Distrital level with the main stakeholder in natural resources management and biodiversity conservation and community level, including Communities Fishering Council (CCPs) within Vilankulo and Inhassoro districts.',
-      methodologyPart2: 'At district level, these workshops aimed to assess the current status of coastal planning and engage stakeholders in discussions regarding fisheries resource management across the province.',
-      methodologyPart3: 'At community level (inland) Participatory spatial mapping was conducted separately with CCPs of Vuca, Petane, Mukokuene, Tsondzo, Mangarelane, Nhagondzo and Chivambofrom Inhassoro district and Mangalisse, Mabandene, Mondego and Chichocane from Vilankulo district, where was gathered high-value information regarding coastal zoning in fishing contest and biodiversity and ecosystems conservation efforts carried out at the community level in order to maintain the fishing activity sustainable.',
-      methodologyPart4: 'The research covered the island\'s community within the archipelago. The communities from Magaruque, Benguera and Bazaruto islands provided extremely relevant information, given their exclusive dependence on marine resources as a means of subsistence, they revealed in-depth knowledge about coastal zoning in the region of the Greater BazarutoKBA, which enabled the creation of more precise maps with more in-depth details about fishing areas, tourism, mangroves, the occurrence of coral reefs, dugong and turtle routes, etc.',
+      studyApproach: 'The study was conducted through a participatory spatial mapping in three different levels/categories, namely: Distrital level with the main stakeholder in natural resources management and biodiversity conservation and community level, including Communities Fishering Council (CCPs) within Vilankulo and Inhassoro districts.',
+      districtLevel: 'At district level, these workshops aimed to assess the current status of coastal planning and engage stakeholders in discussions regarding fisheries resource management across the province.',
+      communityLevelInland: 'At community level (inland) Participatory spatial mapping was conducted separately with CCPs of Vuca, Petane, Mukokuene, Tsondzo, Mangarelane, Nhagondzo and Chivambofrom Inhassoro district and Mangalisse, Mabandene, Mondego and Chichocane from Vilankulo district, where was gathered high-value information regarding coastal zoning in fishing contest and biodiversity and ecosystems conservation efforts carried out at the community level in order to maintain the fishing activity sustainable.',
+      islandCommunities: 'The research covered the island\'s community within the archipelago. The communities from Magaruque, Benguera and Bazaruto islands provided extremely relevant information, given their exclusive dependence on marine resources as a means of subsistence, they revealed in-depth knowledge about coastal zoning in the region of the Greater BazarutoKBA, which enabled the creation of more precise maps with more in-depth details about fishing areas, tourism, mangroves, the occurrence of coral reefs, dugong and turtle routes, etc.',
       results: 'Results',
       resultsText: 'Available under request',
       appliedSkills: 'Applied Skills',
-      contribution: 'Contribution',
-      contributionText: 'As part of the Data4MOZ team, I contributed to the design and implementation of participatory spatial mapping activities at district, community, and island levels, facilitating workshops and data collection sessions with local communities and stakeholders.',
       institutions: 'Involved institutions',
     },
     pt: {
@@ -222,29 +233,27 @@ const projectData: Record<string, any> = {
       period: 'Out. 2023 - Abr. 2024',
       overview: 'Visão Geral',
       overviewText: 'A Grande Área de Biodiversidade Chave (KBA) de Bazaruto abriga diversos ecossistemas marinhos e, devido à sua abundante biodiversidade e paisagens diversas, esta área possui importância ecológica, económica e social significativa, com o turismo e a pesca servindo como atividades primárias. Este ecossistema único sustenta os meios de subsistência das comunidades locais que residem dentro do BANP e das comunidades costeiras nos distritos continentais de Vilankulos, Inhassoro e Govuro. No entanto, os habitats e espécies enfrentam ameaças de práticas de pesca ilegais e insustentáveis, utilização não regulamentada de recursos naturais. Portanto, devido aos desafios mencionados e ao imperativo de melhorar a tomada de decisões para a conservação da biodiversidade e o envolvimento comunitário, esta pesquisa foi conduzida, visando i) mapear geograficamente locais que são considerados cruciais para fornecer recursos e serviços essenciais tanto para comunidades insulares quanto continentais, ii) Fornecer uma compreensão abrangente de como estes locais significativos estão atualmente sendo utilizados e por quem dentro da comunidade, iii) Identificar quais tipos de uso são considerados sustentáveis e harmoniosos, em oposição àqueles que podem gerar conflitos, iv) Investigar e documentar as perspetivas das comunidades locais sobre as mudanças antecipadas nestas áreas na próxima década, incluindo alterações nos padrões de distribuição e utilização resultantes das mudanças climáticas e outros fatores ambientais.',
-      methodology: 'O estudo foi conduzido através de um mapeamento espacial participativo em três níveis/categorias diferentes, nomeadamente: Nível distrital com as principais partes interessadas na gestão de recursos naturais e conservação da biodiversidade e nível comunitário, incluindo os Conselhos Comunitários de Pesca (CCPs) nos distritos de Vilankulo e Inhassoro.',
-      methodologyPart2: 'Ao nível distrital, estes workshops visaram avaliar o estado atual do planeamento costeiro e envolver as partes interessadas em discussões sobre a gestão dos recursos pesqueiros em toda a província.',
-      methodologyPart3: 'Ao nível comunitário (interior) O mapeamento espacial participativo foi conduzido separadamente com os CCPs de Vuca, Petane, Mukokuene, Tsondzo, Mangarelane, Nhagondzo e Chivambofrom do distrito de Inhassoro e Mangalisse, Mabandene, Mondego e Chichocane do distrito de Vilankulo, onde foi recolhida informação de alto valor sobre o zoneamento costeiro no contexto da pesca e os esforços de conservação da biodiversidade e ecossistemas realizados ao nível comunitário para manter a atividade pesqueira sustentável.',
-      methodologyPart4: 'A pesquisa cobriu a comunidade das ilhas dentro do arquipélago. As comunidades das ilhas de Magaruque, Benguera e Bazaruto forneceram informações extremamente relevantes, dado a sua dependência exclusiva dos recursos marinhos como meio de subsistência, revelaram conhecimento profundo sobre o zoneamento costeiro na região da Grande KBA de Bazaruto, o que permitiu a criação de mapas mais precisos com detalhes mais aprofundados sobre áreas de pesca, turismo, mangais, ocorrência de recifes de coral, rotas de dugongos e tartarugas, etc.',
+      studyApproach: 'O estudo foi conduzido através de um mapeamento espacial participativo em três níveis/categorias diferentes, nomeadamente: Nível distrital com as principais partes interessadas na gestão de recursos naturais e conservação da biodiversidade e nível comunitário, incluindo os Conselhos Comunitários de Pesca (CCPs) nos distritos de Vilankulo e Inhassoro.',
+      districtLevel: 'Ao nível distrital, estes workshops visaram avaliar o estado atual do planeamento costeiro e envolver as partes interessadas em discussões sobre a gestão dos recursos pesqueiros em toda a província.',
+      communityLevelInland: 'Ao nível comunitário (interior) O mapeamento espacial participativo foi conduzido separadamente com os CCPs de Vuca, Petane, Mukokuene, Tsondzo, Mangarelane, Nhagondzo e Chivambofrom do distrito de Inhassoro e Mangalisse, Mabandene, Mondego e Chichocane do distrito de Vilankulo, onde foi recolhida informação de alto valor sobre o zoneamento costeiro no contexto da pesca e os esforços de conservação da biodiversidade e ecossistemas realizados ao nível comunitário para manter a atividade pesqueira sustentável.',
+      islandCommunities: 'A pesquisa cobriu a comunidade das ilhas dentro do arquipélago. As comunidades das ilhas de Magaruque, Benguera e Bazaruto forneceram informações extremamente relevantes, dado a sua dependência exclusiva dos recursos marinhos como meio de subsistência, revelaram conhecimento profundo sobre o zoneamento costeiro na região da Grande KBA de Bazaruto, o que permitiu a criação de mapas mais precisos com detalhes mais aprofundados sobre áreas de pesca, turismo, mangais, ocorrência de recifes de coral, rotas de dugongos e tartarugas, etc.',
       results: 'Resultados',
       resultsText: 'Disponível sob pedido',
       appliedSkills: 'Habilidades Aplicadas',
-      contribution: 'Contribuição',
-      contributionText: 'Como parte da equipa Data4MOZ, contribuí para o desenho e implementação de atividades de mapeamento espacial participativo aos níveis distrital, comunitário e insular, facilitando workshops e sessões de coleta de dados com comunidades locais e partes interessadas.',
       institutions: 'Instituições envolvidas',
     },
     coverImage: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 1_ Cover Image.jpg',
     images: [
       { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 2 Workshop at District Level.JPG', alt: 'Stakeholders Participatory Mapping (Inhassoro, November 2023)', position: 'afterOverview' },
-      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG', alt: 'Community participatory mapping (Benguerra)', position: 'afterMethodologyPart2' },
-      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 3 _ CCP Participatory Mapping.jpg', alt: 'CCP Participatory mapping', position: 'afterMethodologyPart3' },
-      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG', alt: 'Participatory mapping (Magarruque island-Bazaruto Archipelago, December, 2023)', position: 'afterMethodologyPart4' },
+      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG', alt: 'Community participatory mapping (Benguerra)', position: 'afterDistrictLevel' },
+      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 3 _ CCP Participatory Mapping.jpg', alt: 'CCP Participatory mapping', position: 'afterCommunityLevelInland' },
+      { src: '/projects/Participatory Coastal Resources Mapping in Greater Bazaruto Key Biodiversity Area/Image 4 Island Community Participatory Mapping.JPG', alt: 'Participatory mapping (Magarruque island-Bazaruto Archipelago, December, 2023)', position: 'afterIslandCommunities' },
     ],
     institutionsList: [
       'Data4MOZ',
-      'African Parks',
+      'Afrika Parks',
       'Bazaruto Archipelago National Park',
-      'ANAC',
+      'National Administration of Conservation Areas (ANAC)',
       'Conservation International (C.I.)',
     ],
     appliedSkills: [
@@ -262,9 +271,9 @@ const projectData: Record<string, any> = {
       period: '2024',
       overview: 'Overview',
       overviewText: 'The fisheries value chain mapping and governance assessment aims at understanding the effects of the fisheries activities across the region, including the influence of community governance structures as the mechanisms for a participatory marine resources management. The project seeks to deliver a comprehensive and community-informed assessment of the fisheries value chain in and around the Bazaruto Archipelago National Park. The overall objective was to generate evidence to inform more sustainable and inclusive fisheries management while supporting the socio-economic well-being of local communities. Recognizing the central role of fisheries as the primary economic activity in the region, the project adopted a nuanced mapping approach that captured the micro-dynamics of the value chain at the community level.',
-      methodology: 'This involved extensive sampling and site visits to all communities within and around BANP, enabling a detailed understanding of localized practices, key actors, and interactions across the fishing economy. The assessment also examined the multi-scalar dimensions of the fisheries value chain, acknowledging that fish products from the BANP region are not only consumed locally but also transported to major urban markets such as Maputo, Beira, and Chimoio. As such, the study incorporated both local and national-level actors to provide a comprehensive picture of how fish commodities move across regions and supply systems. Additionally, 17 community committees were created throughout the archipelago as a way to strengthen community management of natural resources. The committees were legalized and trained so that they can actively participate in decision-making processes that influence the daily lives of the communities.',
-      contribution: 'Contribution',
-      contributionText: 'As part of the Data4MOZ team, I contributed to the design and implementation of fisheries value chain mapping activities and community governance training sessions, working closely with local communities and stakeholders to improve community participation and involvement in resource management.',
+      samplingApproach: 'This involved extensive sampling and site visits to all communities within and around BANP, enabling a detailed understanding of localized practices, key actors, and interactions across the fishing economy.',
+      multiScalarDimensions: 'The assessment also examined the multi-scalar dimensions of the fisheries value chain, acknowledging that fish products from the BANP region are not only consumed locally but also transported to major urban markets such as Maputo, Beira, and Chimoio. As such, the study incorporated both local and national-level actors to provide a comprehensive picture of how fish commodities move across regions and supply systems.',
+      committees: 'Additionally, 17 community committees were created throughout the archipelago as a way to strengthen community management of natural resources. The committees were legalized and trained so that they can actively participate in decision-making processes that influence the daily lives of the communities.',
       appliedSkills: 'Applied Skills',
       institutions: 'Involved institutions',
     },
@@ -274,23 +283,23 @@ const projectData: Record<string, any> = {
       period: '2024',
       overview: 'Visão Geral',
       overviewText: 'O mapeamento da cadeia de valor das pescas e a avaliação da governança visam compreender os efeitos das atividades pesqueiras em toda a região, incluindo a influência das estruturas de governança comunitária como mecanismos para uma gestão participativa dos recursos marinhos. O projeto visa fornecer uma avaliação abrangente e informada pela comunidade da cadeia de valor das pescas dentro e ao redor do Parque Nacional do Arquipélago de Bazaruto. O objetivo geral foi gerar evidências para informar uma gestão pesqueira mais sustentável e inclusiva, apoiando o bem-estar socioeconómico das comunidades locais. Reconhecendo o papel central das pescas como atividade económica primária na região, o projeto adotou uma abordagem de mapeamento diferenciada que capturou as micro-dinâmicas da cadeia de valor ao nível comunitário.',
-      methodology: 'Isso envolveu uma amostragem extensiva e visitas a todos os locais de todas as comunidades dentro e ao redor do BANP, permitindo uma compreensão detalhada das práticas localizadas, atores-chave e interações na economia pesqueira. A avaliação também examinou as dimensões multi-escalares da cadeia de valor das pescas, reconhecendo que os produtos pesqueiros da região do BANP não são apenas consumidos localmente, mas também transportados para grandes mercados urbanos como Maputo, Beira e Chimoio. Como tal, o estudo incorporou tanto atores locais quanto nacionais para fornecer uma imagem abrangente de como as mercadorias de peixe se movem entre regiões e sistemas de abastecimento. Além disso, 17 comités comunitários foram criados em todo o arquipélago como forma de fortalecer a gestão comunitária dos recursos naturais. Os comités foram legalizados e treinados para que possam participar ativamente nos processos de tomada de decisão que influenciam a vida quotidiana das comunidades.',
-      contribution: 'Contribuição',
-      contributionText: 'Como parte da equipa Data4MOZ, contribuí para o desenho e implementação de atividades de mapeamento da cadeia de valor das pescas e sessões de formação em governança comunitária, trabalhando em estreita colaboração com comunidades locais e partes interessadas para melhorar a participação e envolvimento comunitário na gestão de recursos.',
+      samplingApproach: 'Isso envolveu uma amostragem extensiva e visitas a todos os locais de todas as comunidades dentro e ao redor do BANP, permitindo uma compreensão detalhada das práticas localizadas, atores-chave e interações na economia pesqueira.',
+      multiScalarDimensions: 'A avaliação também examinou as dimensões multi-escalares da cadeia de valor das pescas, reconhecendo que os produtos pesqueiros da região do BANP não são apenas consumidos localmente, mas também transportados para grandes mercados urbanos como Maputo, Beira e Chimoio. Como tal, o estudo incorporou tanto atores locais quanto nacionais para fornecer uma imagem abrangente de como as mercadorias de peixe se movem entre regiões e sistemas de abastecimento.',
+      committees: 'Além disso, 17 comités comunitários foram criados em todo o arquipélago como forma de fortalecer a gestão comunitária dos recursos naturais. Os comités foram legalizados e treinados para que possam participar ativamente nos processos de tomada de decisão que influenciam a vida quotidiana das comunidades.',
       appliedSkills: 'Habilidades Aplicadas',
       institutions: 'Instituições envolvidas',
     },
     coverImage: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Cover Image (1).jpg',
     images: [
       { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 2 (1).jpg', alt: 'Field data collection (Inhassoro, May 2023)', position: 'afterOverview' },
-      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 3 (1).jpg', alt: 'Household survey (Bazaruto, May 2023)', position: 'afterMethodology' },
-      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 4.png', alt: 'Community councils establishment (April, 2024)', position: 'afterContribution' },
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 3 (1).jpg', alt: 'Household survey (Bazaruto, May 2023)', position: 'afterMultiScalar' },
+      { src: '/projects/Fisheries Value Chain Mapping and Community Governance in Bazaruto Archipelago National Park/Image 4.png', alt: 'Community councils establishment (April, 2024)', position: 'afterCommittees' },
     ],
     institutionsList: [
       'Data4MOZ',
       'Bazaruto Archipelago National Park',
       'African Parks',
-      'ANAC',
+      'National Administration of Conservations Area (ANAC)',
     ],
     appliedSkills: [
       { name: 'Biodiversity Conservation', level: 5, color: '#8B5CF6' },
@@ -447,8 +456,8 @@ export default function ProjectDetailPage() {
                     return <span key={index}>{part}</span>
                   })}
                 </div>
-                {/* Image after Overview (for fisheries-bazaruto, community-led-nrm, and luisa) */}
-                {images.find((img: any) => img.position === 'afterOverview') && (
+                {/* Image after Overview (for fisheries-bazaruto, community-led-nrm, luisa - bazaruto/participatory-coastal rendered separately) */}
+                {images.find((img: any) => img.position === 'afterOverview') && slug !== 'participatory-coastal' && slug !== 'bazaruto' && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -474,11 +483,292 @@ export default function ProjectDetailPage() {
                     </div>
                   </motion.div>
                 )}
+
+                {/* Image after Overview (for bazaruto/participatory-coastal only, rendered after Overview text) */}
+                {images.find((img: any) => img.position === 'afterOverview') && (slug === 'participatory-coastal' || slug === 'bazaruto') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterOverview')?.src}
+                        alt={images.find((img: any) => img.position === 'afterOverview')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterOverview')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterOverview')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+
+
+
+                {/* Use Cases (for luisa) */}
+                {t.useCases && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.useCases}
+                  </div>
+                )}
+
+                {/* Mozambique Use Case (for luisa) */}
+                {t.mozambiqueUseCase && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.mozambiqueUseCase}
+                  </div>
+                )}
+
+                {/* Image 3: afterMozambiqueUseCase (for luisa) */}
+                {images.find((img: any) => img.position === 'afterMozambiqueUseCase') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterMozambiqueUseCase')?.src}
+                        alt={images.find((img: any) => img.position === 'afterMozambiqueUseCase')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterMozambiqueUseCase')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterMozambiqueUseCase')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Community Consultations (for luisa) */}
+                {t.communityConsultations && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.communityConsultations}
+                  </div>
+                )}
+
+                {/* Image 4: afterCommunityConsultations (for luisa) */}
+                {images.find((img: any) => img.position === 'afterCommunityConsultations') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterCommunityConsultations')?.src}
+                        alt={images.find((img: any) => img.position === 'afterCommunityConsultations')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterCommunityConsultations')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterCommunityConsultations')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Quantitative Research (for luisa) */}
+                {t.quantitativeResearch && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.quantitativeResearch}
+                  </div>
+                )}
+
+                {/* Image 5: afterQuantitativeResearch (for luisa) */}
+                {images.find((img: any) => img.position === 'afterQuantitativeResearch') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterQuantitativeResearch')?.src}
+                        alt={images.find((img: any) => img.position === 'afterQuantitativeResearch')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterQuantitativeResearch')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterQuantitativeResearch')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Sampling Approach (for fisheries-bazaruto) */}
+                {t.samplingApproach && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.samplingApproach}
+                  </div>
+                )}
+
+                {/* Multi-scalar Dimensions (for fisheries-bazaruto) */}
+                {t.multiScalarDimensions && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.multiScalarDimensions}
+                  </div>
+                )}
+
+                {/* Image 3: afterMultiScalar (for fisheries-bazaruto) */}
+                {images.find((img: any) => img.position === 'afterMultiScalar') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterMultiScalar')?.src}
+                        alt={images.find((img: any) => img.position === 'afterMultiScalar')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterMultiScalar')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterMultiScalar')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Committees (for fisheries-bazaruto) */}
+                {t.committees && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.committees}
+                  </div>
+                )}
+
+                {/* Image 4: afterCommittees (for fisheries-bazaruto) */}
+                {images.find((img: any) => img.position === 'afterCommittees') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterCommittees')?.src}
+                        alt={images.find((img: any) => img.position === 'afterCommittees')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterCommittees')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterCommittees')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Collaboration (for community-led-nrm) */}
+                {t.collaboration && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.collaboration}
+                  </div>
+                )}
+
+                {/* Image 2: afterCollaboration (for community-led-nrm) */}
+                {images.find((img: any) => img.position === 'afterCollaboration') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterCollaboration')?.src}
+                        alt={images.find((img: any) => img.position === 'afterCollaboration')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Execution (for community-led-nrm) */}
+                {t.execution && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.execution}
+                  </div>
+                )}
+
+                {/* Image: afterExecution (for community-led-nrm) */}
+                {images.find((img: any) => img.position === 'afterExecution') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterExecution')?.src}
+                        alt={images.find((img: any) => img.position === 'afterExecution')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </motion.div>
+                )}
+
                 {t.approach && (
                   <>
-                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  {t.approach}
-                </p>
+                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                      <span className="w-1 h-6 bg-primary-500 rounded-full mr-3"></span>
+                      {t.approach}
+                    </h3>
+                    {t.approachText && (
+                      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        {t.approachText}
+                      </p>
+                    )}
                     {t.locations && (
                       <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                         {t.locations}
@@ -513,6 +803,90 @@ export default function ProjectDetailPage() {
                     )}
                   </>
                 )}
+                {/* Study Approach (for participatory-coastal) */}
+                {t.studyApproach && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.studyApproach}
+                  </div>
+                )}
+
+                {/* District Level (for participatory-coastal) */}
+                {t.districtLevel && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.districtLevel}
+                  </div>
+                )}
+
+                {/* Image 2: afterDistrictLevel (for participatory-coastal) */}
+                {images.find((img: any) => img.position === 'afterDistrictLevel') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterDistrictLevel')?.src}
+                        alt={images.find((img: any) => img.position === 'afterDistrictLevel')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterDistrictLevel')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterDistrictLevel')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Community Level Inland (for participatory-coastal) */}
+                {t.communityLevelInland && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.communityLevelInland}
+                  </div>
+                )}
+
+                {/* Image 3: afterCommunityLevelInland (for participatory-coastal) */}
+                {images.find((img: any) => img.position === 'afterCommunityLevelInland') && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="my-8"
+                  >
+                    <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                      <Image
+                        src={images.find((img: any) => img.position === 'afterCommunityLevelInland')?.src}
+                        alt={images.find((img: any) => img.position === 'afterCommunityLevelInland')?.alt}
+                        fill
+                        className="object-cover"
+                      />
+                      {/* Caption overlay - always show if alt exists */}
+                      {images.find((img: any) => img.position === 'afterCommunityLevelInland')?.alt && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                          <p className="text-center text-white text-sm md:text-base italic font-medium">
+                            {images.find((img: any) => img.position === 'afterCommunityLevelInland')?.alt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Island Communities (for participatory-coastal) */}
+                {t.islandCommunities && (
+                  <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                    {t.islandCommunities}
+                  </div>
+                )}
+
                 {t.objectives && (
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                     {t.objectives}
@@ -548,7 +922,7 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {t.methodology && (
+            {t.methodology && slug !== 'space4all' && slug !== 'community-led-nrm' && slug !== 'fisheries-bazaruto' && slug !== 'participatory-coastal' && slug !== 'luisa' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -567,8 +941,94 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Image after Overview (for bazaruto) */}
-            {images.find((img: any) => img.position === 'afterOverview') && (
+            {/* Participatory Validation (for space4all) */}
+            {t.participatoryValidation && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="bg-white dark:bg-dark-card rounded-2xl p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {t.participatoryValidation}
+                  </p>
+                </div>
+              </motion.section>
+            )}
+
+            {/* Image: Participatory validation Kisumo */}
+            {images.find((img: any) => img.position === 'afterParticipatoryValidation') && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                  <Image
+                    src={images.find((img: any) => img.position === 'afterParticipatoryValidation')?.src}
+                    alt={images.find((img: any) => img.position === 'afterParticipatoryValidation')?.alt}
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Caption overlay - always show if alt exists */}
+                  {images.find((img: any) => img.position === 'afterParticipatoryValidation')?.alt && (
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                      <p className="text-center text-white text-sm md:text-base italic font-medium">
+                        {images.find((img: any) => img.position === 'afterParticipatoryValidation')?.alt}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </motion.section>
+            )}
+
+            {/* Participatory Validation with Stakeholders (for space4all) */}
+            {t.participatoryValidationStakeholders && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="bg-white dark:bg-dark-card rounded-2xl p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {t.participatoryValidationStakeholders}
+                  </p>
+                </div>
+              </motion.section>
+            )}
+
+            {/* Image: Participatory validation Beira */}
+            {images.find((img: any) => img.position === 'afterParticipatoryValidationStakeholders') && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+                  <Image
+                    src={images.find((img: any) => img.position === 'afterParticipatoryValidationStakeholders')?.src}
+                    alt={images.find((img: any) => img.position === 'afterParticipatoryValidationStakeholders')?.alt}
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Caption overlay - always show if alt exists */}
+                  {images.find((img: any) => img.position === 'afterParticipatoryValidationStakeholders')?.alt && (
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                      <p className="text-center text-white text-sm md:text-base italic font-medium">
+                        {images.find((img: any) => img.position === 'afterParticipatoryValidationStakeholders')?.alt}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </motion.section>
+            )}
+
+            {/* Image after Overview (for bazaruto old project) */}
+            {images.find((img: any) => img.position === 'afterOverview') && slug !== 'community-led-nrm' && slug !== 'fisheries-bazaruto' && slug !== 'participatory-coastal' && slug !== 'bazaruto' && slug !== 'luisa' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -594,8 +1054,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Methodology Part 2 (for bazaruto) */}
-            {t.methodologyPart2 && (
+            {/* Methodology Part 2 (for bazaruto, excluding participatory-coastal) */}
+            {t.methodologyPart2 && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -610,8 +1070,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Image after Methodology Part 2 (for bazaruto) */}
-            {images.find((img: any) => img.position === 'afterMethodologyPart2') && (
+            {/* Image after Methodology Part 2 (for bazaruto, excluding participatory-coastal) */}
+            {images.find((img: any) => img.position === 'afterMethodologyPart2') && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -637,8 +1097,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Methodology Part 3 (for bazaruto) */}
-            {t.methodologyPart3 && (
+            {/* Methodology Part 3 (for bazaruto, excluding participatory-coastal) */}
+            {t.methodologyPart3 && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -653,8 +1113,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Image after Methodology Part 3 (for bazaruto) */}
-            {images.find((img: any) => img.position === 'afterMethodologyPart3') && (
+            {/* Image after Methodology Part 3 (for bazaruto, excluding participatory-coastal) */}
+            {images.find((img: any) => img.position === 'afterMethodologyPart3') && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -680,8 +1140,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Methodology Part 4 (for bazaruto) */}
-            {t.methodologyPart4 && (
+            {/* Methodology Part 4 (for bazaruto, excluding participatory-coastal) */}
+            {t.methodologyPart4 && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -696,8 +1156,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Image after Methodology Part 4 (for bazaruto) */}
-            {images.find((img: any) => img.position === 'afterMethodologyPart4') && (
+            {/* Image after Methodology Part 4 (for bazaruto, excluding participatory-coastal) */}
+            {images.find((img: any) => img.position === 'afterMethodologyPart4') && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -723,8 +1183,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Images after Methodology (for other projects) */}
-            {images.filter((img: any) => img.position === 'afterMethodology').map((img: any, index: number) => (
+            {/* Images after Methodology (for other projects, excluding community-led-nrm, fisheries-bazaruto, and luisa) */}
+            {images.filter((img: any) => img.position === 'afterMethodology' && slug !== 'community-led-nrm' && slug !== 'fisheries-bazaruto' && slug !== 'participatory-coastal' && slug !== 'luisa').map((img: any, index: number) => (
               <motion.section
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -751,50 +1211,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             ))}
 
-            {/* Applied Methodology */}
-            {t.appliedMethodology && (
-              <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="bg-white dark:bg-dark-card rounded-2xl p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
-                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {t.appliedMethodology}
-                  </p>
-                </div>
-              </motion.section>
-            )}
 
-            {/* Image 3: Participatory validation Beira */}
-            {images.find((img: any) => img.position === 'afterAppliedMethodology') && (
-              <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
-                  <Image
-                    src={images.find((img: any) => img.position === 'afterAppliedMethodology')?.src}
-                    alt={images.find((img: any) => img.position === 'afterAppliedMethodology')?.alt}
-                    fill
-                    className="object-cover"
-                  />
-                  {/* Caption overlay - always show if alt exists */}
-                  {images.find((img: any) => img.position === 'afterAppliedMethodology')?.alt && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
-                      <p className="text-center text-white text-sm md:text-base italic font-medium">
-                        {images.find((img: any) => img.position === 'afterAppliedMethodology')?.alt}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </motion.section>
-            )}
-
-            {t.contribution && t.contributionText && (
+            {t.contribution && t.contributionText && slug !== 'fisheries-bazaruto' && slug !== 'participatory-coastal' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -813,8 +1231,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             )}
 
-            {/* Image 4: Field Observation / Community councils */}
-            {images.find((img: any) => img.position === 'afterContribution') && (
+            {/* Image 4: Field Observation / Community councils (only for non-space4all and non-fisheries-bazaruto projects) */}
+            {images.find((img: any) => img.position === 'afterContribution') && slug !== 'space4all' && slug !== 'fisheries-bazaruto' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -835,6 +1253,60 @@ export default function ProjectDetailPage() {
                         {images.find((img: any) => img.position === 'afterContribution')?.alt}
                       </p>
                     </div>
+                  )}
+                </div>
+              </motion.section>
+            )}
+
+            {/* Video (for space4all, appears after Contribution) */}
+            {project.video && slug === 'space4all' && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+                  <video
+                    src={project.video}
+                    controls
+                    className="w-full h-auto"
+                  />
+                  {project.videoDescription && (
+                    <p className="text-center text-gray-600 dark:text-gray-400 text-sm md:text-base italic py-4 px-6 font-medium">
+                      {project.videoDescription}
+                    </p>
+                  )}
+                </div>
+              </motion.section>
+            )}
+
+            {/* Preliminary Results (for space4all) */}
+            {t.preliminaryResults && t.preliminaryResultsText && (
+              <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                  <span className="w-1 h-8 bg-primary-500 rounded-full mr-4"></span>
+                  {t.preliminaryResults}
+                </h2>
+                <div className="bg-white dark:bg-dark-card rounded-2xl p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+                  <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                    {t.preliminaryResultsText}
+                  </p>
+                  {t.requestReport && t.requestReportEmail && (
+                    <a
+                      href={`mailto:${t.requestReportEmail}?subject=Request for SPACE4ALL Reports&body=Dear Deyril,%0D%0A%0D%0AI would like to request the SPACE4ALL preliminary reports.%0D%0A%0D%0AThank you.`}
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-xl hover:from-primary-light hover:to-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 transform hover:scale-105"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      {t.requestReport}
+                    </a>
                   )}
                 </div>
               </motion.section>
@@ -861,7 +1333,7 @@ export default function ProjectDetailPage() {
             )}
 
             {/* Images after Results */}
-            {images.filter((img: any) => img.position === 'afterResults').map((img: any, index: number) => (
+            {images.filter((img: any) => img.position === 'afterResults' && slug !== 'community-led-nrm' && slug !== 'participatory-coastal').map((img: any, index: number) => (
               <motion.section
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -888,8 +1360,8 @@ export default function ProjectDetailPage() {
               </motion.section>
             ))}
 
-            {/* Video */}
-            {project.video && (
+            {/* Video (for other projects) */}
+            {project.video && slug !== 'space4all' && (
               <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

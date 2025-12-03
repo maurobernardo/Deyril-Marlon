@@ -3,7 +3,7 @@
 import { useLanguage } from './LanguageProvider'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Calendar, Users, GraduationCap, Globe, Map, Leaf, Users2, BookOpen } from 'lucide-react'
+import { Calendar, Users, Building, BookOpen } from 'lucide-react'
 
 export default function Training() {
   const { t } = useLanguage()
@@ -39,10 +39,7 @@ export default function Training() {
         description: t.training.koboToolbox.description,
         students: t.training.koboToolbox.students,
         providedBy: t.training.koboToolbox.providedBy,
-        programs: t.training.koboToolbox.programs,
-        programsList: t.training.koboToolbox.programsList,
-        outcome: t.training.koboToolbox.outcome,
-        icon: GraduationCap,
+        icon: Building,
       }
     } else if (type === 'googleEarthEngine') {
       return {
@@ -51,20 +48,16 @@ export default function Training() {
         description: t.training.googleEarthEngine.description,
         attendees: t.training.googleEarthEngine.attendees,
         providedBy: t.training.googleEarthEngine.providedBy,
-        examples: t.training.googleEarthEngine.examples,
-        examplesList: t.training.googleEarthEngine.examplesList,
-        participants: t.training.googleEarthEngine.participants,
-        icon: Globe,
+        icon: Building,
       }
     } else if (type === 'googleMyMaps') {
       return {
         title: t.training.googleMyMaps.title,
         date: t.training.googleMyMaps.date,
         description: t.training.googleMyMaps.description,
+        communities: t.training.googleMyMaps.communities,
         providedBy: t.training.googleMyMaps.providedBy,
-        locations: t.training.googleMyMaps.locations,
-        locationsList: t.training.googleMyMaps.locationsList,
-        icon: Map,
+        icon: Building,
       }
     } else if (type === 'sustainableNRM') {
       return {
@@ -73,9 +66,7 @@ export default function Training() {
         description: t.training.sustainableNRM.description,
         communities: t.training.sustainableNRM.communities,
         providedBy: t.training.sustainableNRM.providedBy,
-        communitiesList: t.training.sustainableNRM.communitiesList,
-        outcomes: t.training.sustainableNRM.outcomes,
-        icon: Leaf,
+        icon: Building,
       }
     } else {
       return {
@@ -84,9 +75,7 @@ export default function Training() {
         description: t.training.communityGovernance.description,
         committees: t.training.communityGovernance.committees,
         providedBy: t.training.communityGovernance.providedBy,
-        contentTitle: t.training.communityGovernance.contentTitle,
-        content: t.training.communityGovernance.content,
-        icon: Users2,
+        icon: Building,
       }
     }
   }
@@ -178,7 +167,7 @@ export default function Training() {
                     <p className="text-sm">{data.description}</p>
 
                     <div className="flex flex-wrap gap-4 mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                      {training.type !== 'googleMyMaps' && training.type !== 'sustainableNRM' && training.type !== 'communityGovernance' && (
+                      {training.type !== 'sustainableNRM' && training.type !== 'communityGovernance' && training.type !== 'googleMyMaps' && (
                         <div className="flex items-center gap-2 text-sm">
                           <Users className="w-5 h-5 text-primary" />
                           <span className="font-medium">
@@ -187,6 +176,12 @@ export default function Training() {
                         </div>
                       )}
                       {training.type === 'sustainableNRM' && (
+                        <div className="flex items-center gap-2 text-sm">
+                          <Users className="w-5 h-5 text-primary" />
+                          <span className="font-medium">{data.communities}</span>
+                        </div>
+                      )}
+                      {training.type === 'googleMyMaps' && (
                         <div className="flex items-center gap-2 text-sm">
                           <Users className="w-5 h-5 text-primary" />
                           <span className="font-medium">{data.communities}</span>
@@ -204,81 +199,6 @@ export default function Training() {
                       </div>
                     </div>
 
-                    {training.type === 'koboToolbox' && (
-                      <>
-                        <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
-                            {data.programs}
-                          </h4>
-                          <p className="text-xs text-gray-600 dark:text-gray-400">
-                            {data.programsList}
-                          </p>
-                        </div>
-
-                        <div className="mt-4">
-                          <p className="text-xs text-gray-600 dark:text-gray-400">
-                            {data.outcome}
-                          </p>
-                        </div>
-                      </>
-                    )}
-
-                    {training.type === 'googleEarthEngine' && (
-                      <>
-                        <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
-                            {data.examples}
-                          </h4>
-                          <p className="text-xs text-gray-600 dark:text-gray-400">
-                            {data.examplesList}
-                          </p>
-                        </div>
-
-                        <div className="mt-4">
-                          <p className="text-xs text-gray-600 dark:text-gray-400">
-                            {data.participants}
-                          </p>
-                        </div>
-                      </>
-                    )}
-
-                    {training.type === 'googleMyMaps' && (
-                      <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
-                          {data.locations}
-                        </h4>
-                        <p className="text-xs text-gray-600 dark:text-gray-400">
-                          {data.locationsList}
-                        </p>
-                      </div>
-                    )}
-
-                    {training.type === 'sustainableNRM' && (
-                      <>
-                        <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
-                            {data.communitiesList}
-                          </h4>
-                        </div>
-
-                        <div className="mt-4">
-                          <p className="text-xs text-gray-600 dark:text-gray-400">
-                            {data.outcomes}
-                          </p>
-                        </div>
-                      </>
-                    )}
-
-                    {training.type === 'communityGovernance' && (
-                      <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
-                          {data.contentTitle}
-                        </h4>
-                        <p className="text-xs text-gray-600 dark:text-gray-400">
-                          {data.content}
-                        </p>
-                      </div>
-                    )}
                   </div>
               </div>
             </motion.div>

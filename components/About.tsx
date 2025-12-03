@@ -93,10 +93,7 @@ export default function About() {
               </div>
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
-              {t.about.bio.split('. ')[0]}.
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-justify">
-              {t.about.bio.split('. ').slice(1, 3).join('. ')}.
+              {t.about.bio.split('. ').slice(0, 3).join('. ')}.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
               {t.about.bio.split('. ').slice(3).join('. ')}

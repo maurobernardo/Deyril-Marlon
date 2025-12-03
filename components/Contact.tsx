@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from './LanguageProvider'
-import { Mail, Send, MessageSquare, User, FileText, Phone, Linkedin, MessageCircle, MapPin } from 'lucide-react'
+import { Mail, Send, MessageSquare, User, FileText, Phone, Linkedin, MapPin } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 
@@ -380,24 +380,6 @@ export default function Contact() {
                 </div>
               </a>
 
-              {/* Phone/WhatsApp */}
-              <a
-                href={`https://wa.me/258845486656?text=${encodeURIComponent(t.contact.whatsappMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-dark-surface/50 hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300 transform hover:scale-105"
-              >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <MessageCircle className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t.contact.contacto}</p>
-                  <p className="text-gray-900 dark:text-white font-semibold group-hover:text-green-500 dark:group-hover:text-green-400 transition-colors">
-                    +258 845 486 656
-                  </p>
-                </div>
-              </a>
-
               {/* Location */}
               <div className="group flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-dark-surface/50 hover:bg-sky-50 dark:hover:bg-sky-900/20 transition-all duration-300 transform hover:scale-105">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-cyan-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -429,17 +411,17 @@ export default function Contact() {
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">3</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">2</span>
                   <span>{t.stats.publications}</span>
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">5</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">20+</span>
                   <span>{t.stats.communitiesTrained}</span>
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">1</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">2</span>
                   <span>{t.stats.countriesWorked}</span>
                 </span>
               </div>
@@ -463,19 +445,6 @@ export default function Contact() {
                     <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <div className="absolute inset-0 rounded-full border-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
-                </a>
-                <a
-                  href={`https://wa.me/258845486656?text=${encodeURIComponent(t.contact.whatsappMessage)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex items-center justify-center w-12 h-12 transition-all duration-500 transform hover:scale-125 hover:rotate-12"
-                  aria-label="WhatsApp"
-                >
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-150"></div>
-                  <div className="relative z-10 w-12 h-12 rounded-full bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 flex items-center justify-center border-2 border-green-200 dark:border-green-700/50 group-hover:border-green-500 dark:group-hover:border-green-400 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-green-500/50">
-                    <MessageCircle className="w-6 h-6 text-green-500 dark:text-green-400 group-hover:scale-110 transition-transform duration-300" />
-                  </div>
-                  <div className="absolute inset-0 rounded-full border-2 border-green-500 opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
                 </a>
               </div>
             </div>

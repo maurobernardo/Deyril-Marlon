@@ -69,7 +69,7 @@ export const translations = {
       quote: "I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project."
     },
     projects: {
-      title: "My Recent Works",
+      title: "Projects",
       viewDetails: "View Details",
       space4all: {
         title: "SPACE4ALL",
@@ -273,7 +273,7 @@ export const translations = {
       quote: "Tenho uma paixão pelo design de investigação e monitorização, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto."
     },
     projects: {
-      title: "Meus Trabalhos Recentes",
+      title: "Projetos",
       viewDetails: "Ver Detalhes",
       space4all: {
         title: "SPACE4ALL",

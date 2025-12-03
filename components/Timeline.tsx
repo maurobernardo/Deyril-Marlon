@@ -155,24 +155,9 @@ export default function Timeline() {
 
                           {/* Description */}
                           {firstItem.description && (
-                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5 text-sm md:text-base">
+                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
                               {firstItem.description}
                             </p>
-                          )}
-
-                          {/* Achievements/Highlights */}
-                          {firstItem.highlights && firstItem.highlights.length > 0 && (
-                            <ul className="space-y-2.5">
-                              {firstItem.highlights.map((highlight, hIndex) => (
-                                <li
-                                  key={hIndex}
-                                  className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-400"
-                                >
-                                  <span className="text-primary mt-1.5 flex-shrink-0">▸</span>
-                                  <span className="leading-relaxed">{highlight}</span>
-                                </li>
-                              ))}
-                            </ul>
                           )}
                         </motion.div>
                       </div>
@@ -240,24 +225,9 @@ export default function Timeline() {
 
                           {/* Description */}
                           {secondItem.description && (
-                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-5 text-sm md:text-base">
+                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
                               {secondItem.description}
                             </p>
-                          )}
-
-                          {/* Achievements/Highlights */}
-                          {secondItem.highlights && secondItem.highlights.length > 0 && (
-                            <ul className="space-y-2.5">
-                              {secondItem.highlights.map((highlight, hIndex) => (
-                                <li
-                                  key={hIndex}
-                                  className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-400"
-                                >
-                                  <span className="text-primary mt-1.5 flex-shrink-0">▸</span>
-                                  <span className="leading-relaxed">{highlight}</span>
-                                </li>
-                              ))}
-                            </ul>
                           )}
                         </motion.div>
                       </div>
