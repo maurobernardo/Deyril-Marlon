@@ -30,8 +30,8 @@ const translations: Record<Language, Translations> = {
       welcomeMessage: 'Welcome to my e-Portifolio, I am pleased to have you here!',
       rotatingTexts: [
         'Remote Sensing Analyst with over 3 years experience',
-        'GIS and Earth Observation Systems profissional',
-        'Agriculture, Forest and biodiversity monitoring expert',
+        'GIS and Earth Observation Systems professional',
+        'Agriculture, Forest and biodiversity monitoring ',
       ],
       seeCV: 'See my CV',
       iAm: "I'm",
