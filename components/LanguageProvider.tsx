@@ -359,7 +359,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Work Experience',
           title: 'Agricultural Entomology Trainer',
           period: 'Nov - Dec 2023',
-          organization: 'Instituto Superior Dom Bosco',
+          organization: 'Eduardo Mondlane University',
           location: 'Mozambique',
           description: 'Conducting training in integrated agricultural pest management, identification, monitoring and training of agricultural pests.',
           highlights: [
@@ -372,7 +372,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Work Experience',
           title: 'Geographic Information Technology Monitor Lecturer',
           period: 'Jul - Dec 2022',
-          organization: 'Instituto Superior Dom Bosco',
+          organization: 'Eduardo Mondlane University',
           location: 'Mozambique',
           description: 'Teaching Geospatial data acquisition and processing, remote sensing applied to precision agriculture.',
           highlights: [
@@ -756,7 +756,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Experiência Profissional',
           title: 'Formador em Entomologia Agrícola',
           period: 'Nov - Dez 2023',
-          organization: 'Instituto Superior Dom Bosco',
+          organization: 'Universidade Eduardo Mondlane',
           location: 'Moçambique',
           description: 'Realizando treinamento em manejo integrado de pragas agrícolas, identificação, monitoramento e treinamento de pragas agrícolas.',
           highlights: [
@@ -769,7 +769,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Experiência Profissional',
           title: 'Monitor de Tecnologia de Informação Geográfica',
           period: 'Jul - Dez 2022',
-          organization: 'Instituto Superior Dom Bosco',
+          organization: 'Universidade Eduardo Mondlane',
           location: 'Moçambique',
           description: 'Ensinando aquisição e processamento de dados geoespaciais, sensoriamento remoto aplicado à agricultura de precisão.',
           highlights: [
