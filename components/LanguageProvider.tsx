@@ -359,7 +359,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Work Experience',
           title: 'Agricultural Entomology Trainer',
           period: 'Nov - Dec 2023',
-          organization: 'Eduardo Mondlane University',
+          organization: 'Instituto Superior Dom Basco',
           location: 'Mozambique',
           description: 'Conducting training in integrated agricultural pest management, identification, monitoring and training of agricultural pests.',
           highlights: [
@@ -756,7 +756,7 @@ const translations: Record<Language, Translations> = {
           typeLabel: 'Experiência Profissional',
           title: 'Formador em Entomologia Agrícola',
           period: 'Nov - Dez 2023',
-          organization: 'Universidade Eduardo Mondlane',
+          organization: 'Instituto Superior Dom Basco',
           location: 'Moçambique',
           description: 'Realizando treinamento em manejo integrado de pragas agrícolas, identificação, monitoramento e treinamento de pragas agrícolas.',
           highlights: [
