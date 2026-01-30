@@ -15,7 +15,7 @@ export default function Training() {
     },
     {
       type: 'googleEarthEngine',
-      image: '/Training/Google Earth Engine Webinar/image.jpg',
+      image: '/Training/Google Earth Engine Webinar/image.jpeg',
     },
     {
       type: 'googleMyMaps',
@@ -28,6 +28,10 @@ export default function Training() {
     {
       type: 'communityGovernance',
       image: '/Training/Community Governance/image.jpg',
+    },
+    {
+      type: 'precisionAgricultureDrones',
+      image: '/Training/Precision Agriculture with Drones.jpeg',
     },
   ]
 
@@ -66,6 +70,15 @@ export default function Training() {
         description: t.training.sustainableNRM.description,
         communities: t.training.sustainableNRM.communities,
         providedBy: t.training.sustainableNRM.providedBy,
+        icon: Building,
+      }
+    } else if (type === 'precisionAgricultureDrones') {
+      return {
+        title: t.training.precisionAgricultureDrones.title,
+        date: t.training.precisionAgricultureDrones.date,
+        description: t.training.precisionAgricultureDrones.description,
+        participants: t.training.precisionAgricultureDrones.participants,
+        providedBy: t.training.precisionAgricultureDrones.providedBy,
         icon: Building,
       }
     } else {
@@ -167,7 +180,7 @@ export default function Training() {
                     <p className="text-sm">{data.description}</p>
 
                     <div className="flex flex-wrap gap-4 mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                      {training.type !== 'sustainableNRM' && training.type !== 'communityGovernance' && training.type !== 'googleMyMaps' && (
+                      {training.type !== 'sustainableNRM' && training.type !== 'communityGovernance' && training.type !== 'googleMyMaps' && training.type !== 'precisionAgricultureDrones' && (
                         <div className="flex items-center gap-2 text-sm">
                           <Users className="w-5 h-5 text-primary" />
                           <span className="font-medium">
@@ -191,6 +204,12 @@ export default function Training() {
                         <div className="flex items-center gap-2 text-sm">
                           <Users className="w-5 h-5 text-primary" />
                           <span className="font-medium">{data.committees}</span>
+                        </div>
+                      )}
+                      {training.type === 'precisionAgricultureDrones' && (
+                        <div className="flex items-center gap-2 text-sm">
+                          <Users className="w-5 h-5 text-primary" />
+                          <span className="font-medium">{data.participants}</span>
                         </div>
                       )}
                       <div className="flex items-center gap-2 text-sm">

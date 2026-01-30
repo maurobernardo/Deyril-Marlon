@@ -15,7 +15,7 @@ export const translations = {
       iAm: "I am",
       title: "Agronomist & Remote Sensing Analyst",
       rotatingTexts: [
-        "Remote Sensing Analyst with over 3 years experience",
+        "Remote Sensing Analyst with over 4 years experience",
         "GIS and Earth Observation Systems professional",
         "Agriculture, Forest and biodiversity monitoring ",
         "Participatory spatial data for community-based natural resources management"
@@ -24,7 +24,7 @@ export const translations = {
       downloadCV: "Download CV",
       contact: "Contact",
       stats: {
-        experience: "3+ Years of Experience",
+        experience: "4+ Years of Experience",
         projects: "10+ Projects Completed",
         clients: "50+ Happy Clients",
         publications: "5+ Publications"
@@ -34,7 +34,7 @@ export const translations = {
       title: "About Me",
       professionalOverview: "Professional Overview",
       keyHighlights: "Key Highlights",
-      bio: "A Remote Sensing Analyst with over 3 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project.",
+      bio: "A Remote Sensing Analyst with over 4 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project.",
       highlights: {
         specialized: "Specialized in GIS and Earth Observation Systems",
         passionate: "Passionate about research design and MEL",
@@ -219,7 +219,7 @@ export const translations = {
       iAm: "Eu sou",
       title: "Agrónomo e Analista de Sensoriamento Remoto",
       rotatingTexts: [
-        "Analista de Sensoriamento Remoto com mais de 3 anos de experiência",
+        "Analista de Sensoriamento Remoto com mais de 4 anos de experiência",
         "Especialista em Sistemas SIG e Observação da Terra",
         "Especialista em monitorização de Agricultura, Floresta e biodiversidade",
         "Dados espaciais participativos para gestão comunitária de recursos naturais"
@@ -228,7 +228,7 @@ export const translations = {
       downloadCV: "Baixar CV",
       contact: "Contacto",
       stats: {
-        experience: "3+ Anos de Experiência",
+        experience: "4+ Anos de Experiência",
         projects: "10+ Projetos Concluídos",
         clients: "50+ Clientes Satisfeitos",
         publications: "5+ Publicações"
@@ -238,7 +238,7 @@ export const translations = {
       title: "Sobre Mim",
       professionalOverview: "Visão Profissional",
       keyHighlights: "Destaques Principais",
-      bio: "Um Analista de Sensoriamento Remoto com mais de 3 anos de experiência. A minha área de especialização está notavelmente focada em Sistemas SIG e Observação da Terra (EO) para Agricultura, Floresta e monitorização da biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronómicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades na monitorização da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de investigação e monitorização, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto.",
+      bio: "Um Analista de Sensoriamento Remoto com mais de 4 anos de experiência. A minha área de especialização está notavelmente focada em Sistemas SIG e Observação da Terra (EO) para Agricultura, Floresta e monitorização da biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronómicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades na monitorização da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de investigação e monitorização, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto.",
       highlights: {
         specialized: "Especializado em Sistemas SIG e Observação da Terra",
         passionate: "Apaixonado por design de investigação e MEL",

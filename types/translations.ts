@@ -231,6 +231,13 @@ export interface Translations {
       contentTitle: string
       content: string
     }
+    precisionAgricultureDrones: {
+      title: string
+      date: string
+      description: string
+      participants: string
+      providedBy: string
+    }
   }
   contact: {
     title: string

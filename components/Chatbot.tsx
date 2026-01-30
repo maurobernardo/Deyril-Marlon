@@ -48,7 +48,7 @@ export default function Chatbot() {
     en: {
       name: 'Deyril Marlon Ibraimo',
       title: 'Agronomist & Remote Sensing Analyst',
-      experience: 'Over 3 years of experience in Remote Sensing and GIS',
+      experience: 'Over 4 years of experience in Remote Sensing and GIS',
       expertise: [
         'GIS and Earth Observation Systems',
         'Agriculture, Forest and biodiversity monitoring',
@@ -86,7 +86,7 @@ export default function Chatbot() {
     pt: {
       name: 'Deyril Marlon Ibraimo',
       title: 'Agrónomo e Analista de Sensoriamento Remoto',
-      experience: 'Mais de 3 anos de experiência em Sensoriamento Remoto e SIG',
+      experience: 'Mais de 4 anos de experiência em Sensoriamento Remoto e SIG',
       expertise: [
         'Sistemas de SIG e Observação da Terra',
         'Monitoramento de Agricultura, Floresta e biodiversidade',

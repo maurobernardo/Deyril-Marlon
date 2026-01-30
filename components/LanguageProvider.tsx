@@ -27,9 +27,9 @@ const translations: Record<Language, Translations> = {
     home: {
       name: 'Deyril M. Ibraimo',
       title: 'Agronomist & Remote Sensing Analyst',
-      welcomeMessage: 'Welcome to my e-Portifolio, I am pleased to have you here!',
+      welcomeMessage: 'Welcome to my e-Portfolio, I am pleased to have you here!',
       rotatingTexts: [
-        'Remote Sensing Analyst with over 3 years experience',
+        'Remote Sensing Analyst with over 4 years experience',
         'GIS and Earth Observation Systems professional',
         'Agriculture, Forest and biodiversity monitoring ',
       ],
@@ -40,7 +40,7 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'About Me',
-      bio: 'I\'m a Remote Sensing Analyst with over 3 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project.',
+      bio: 'I\'m a Remote Sensing Analyst with over 4 years experience. My area of expertise is notably focused on GIS and Earth Observation (EO) Systems for Agriculture, Forest and biodiversity monitoring, a passion which emerged during my final year of undergraduate studies, while validating biophysical parameters in agronomic crops based on satellite imagery. It includes the collection and validation of spatial data and development of models that generate data to support decision-making in natural resource management and precision agriculture based on satellite and UAV imagery and also extends to knowledge transfer, training and empowering communities in biodiversity monitoring through participatory spatial data for community based natural resources management, measuring and analyzing biodiversity losses and adeptly measure biophysical parameters in local forests based on geospatial data. I have a passion for research design and monitoring, evaluation & Learning (MEL), which gives me a chance to be a lifelong learner through the lessons from the reality and experience of every single project.',
       professionalOverview: 'Professional Overview',
       keyHighlights: 'Key Highlights',
       highlights: {
@@ -251,6 +251,13 @@ const translations: Record<Language, Translations> = {
         contentTitle: 'Training content:',
         content: 'The training consisted of principles of operation for community committees, awareness of aquatic and terrestrial biodiversity conservation, as well as the management plan in force in BANP.',
       },
+      precisionAgricultureDrones: {
+        title: 'Precision Agriculture with Drones',
+        date: 'December, 2025',
+        description: 'This training on Precision Agriculture with Drones was provided by Mozambique Flying Labs, focusing on the application of drone technology for agricultural monitoring and management.',
+        participants: '25 Participants',
+        providedBy: 'Mozambique Flying Labs',
+      },
     },
     contact: {
       title: 'Contact Me',
@@ -424,9 +431,9 @@ const translations: Record<Language, Translations> = {
     home: {
       name: 'Deyril M. Ibraimo',
       title: 'Agrónomo e Analista de Sensoriamento Remoto',
-      welcomeMessage: 'Bem-vindo ao meu e-Portfólio, é um prazer tê-lo aqui!',
+      welcomeMessage: 'Bem-vindo ao meu e-Portfolio, é um prazer tê-lo aqui!',
       rotatingTexts: [
-        'Analista de Sensoriamento Remoto com mais de 3 anos de experiência',
+        'Analista de Sensoriamento Remoto com mais de 4 anos de experiência',
         'Especialista em Sistemas de SIG e Observação da Terra',
         'Especialista em monitoramento de Agricultura, Floresta e biodiversidade',
       ],
@@ -437,7 +444,7 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'Sobre Mim',
-      bio: 'Sou um Analista de Sensoriamento Remoto com mais de 3 anos de experiência. A minha área de especialização está focada em Sistemas de SIG e Observação da Terra (EO) para Agricultura, Floresta e monitoramento de biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronômicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades no monitoramento da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de pesquisa e monitoramento, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto.',
+      bio: 'Sou um Analista de Sensoriamento Remoto com mais de 4 anos de experiência. A minha área de especialização está focada em Sistemas de SIG e Observação da Terra (EO) para Agricultura, Floresta e monitoramento de biodiversidade, uma paixão que surgiu durante o meu último ano de estudos de graduação, enquanto validava parâmetros biofísicos em culturas agronômicas com base em imagens de satélite. Inclui a recolha e validação de dados espaciais e desenvolvimento de modelos que geram dados para apoiar a tomada de decisões na gestão de recursos naturais e agricultura de precisão com base em imagens de satélite e UAV e também se estende à transferência de conhecimento, formação e capacitação de comunidades no monitoramento da biodiversidade através de dados espaciais participativos para gestão comunitária de recursos naturais, medindo e analisando perdas de biodiversidade e medindo habilmente parâmetros biofísicos em florestas locais com base em dados geoespaciais. Tenho uma paixão pelo design de pesquisa e monitoramento, avaliação e aprendizagem (MEL), o que me dá a oportunidade de ser um aprendiz ao longo da vida através das lições da realidade e experiência de cada projeto.',
       professionalOverview: 'Visão Profissional',
       keyHighlights: 'Destaques Principais',
       highlights: {
@@ -647,6 +654,13 @@ const translations: Record<Language, Translations> = {
         providedBy: 'Data4MOZ',
         contentTitle: 'Conteúdo da formação:',
         content: 'A formação consistiu em princípios de funcionamento para comités comunitários, sensibilização sobre conservação da biodiversidade aquática e terrestre, bem como o plano de gestão em vigor no BANP.',
+      },
+      precisionAgricultureDrones: {
+        title: 'Agricultura de Precisão com Drones',
+        date: 'Dezembro, 2025',
+        description: 'Esta formação sobre Agricultura de Precisão com Drones foi fornecida pela Mozambique Flying Labs, focando na aplicação de tecnologia de drones para monitoramento e gestão agrícola.',
+        participants: '25 Participantes',
+        providedBy: 'Mozambique Flying Labs',
       },
     },
     contact: {

@@ -401,7 +401,7 @@ export default function Contact() {
             <div className="mb-6 pt-6 border-t border-gray-200 dark:border-gray-700">
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-600 dark:text-gray-400">
                 <span className="flex items-center gap-1">
-                  <span className="font-semibold text-primary dark:text-primary-light">3+</span>
+                  <span className="font-semibold text-primary dark:text-primary-light">4+</span>
                   <span>{t.stats.yearsExperience}</span>
                 </span>
                 <span className="text-gray-400">•</span>
