@@ -171,7 +171,49 @@ export const translations = {
       title: "Training & Skills Transfers",
       educationQuote: "Education is the most powerful weapon you can use to change the world",
       educationQuoteAuthor: "Nelson Mandela",
-      educationStatement: "Moved by the quote above, I use part of my time to share and/or transfer skills to the youth and the upcoming generations."
+      educationStatement: "Moved by the quote above, I use part of my time to share and/or transfer skills to the youth and the upcoming generations.",
+      koboToolbox: {
+        title: "Kobo ToolBox for Data Collection and Data Management",
+        date: "2024",
+        description: "Training on Kobo ToolBox for efficient data collection and management in field research.",
+        students: "25+ Students",
+        providedBy: "Data4MOZ"
+      },
+      googleEarthEngine: {
+        title: "Google Earth Engine Webinar",
+        date: "2024",
+        description: "Webinar on using Google Earth Engine for remote sensing and geospatial analysis.",
+        attendees: "50+ Attendees",
+        providedBy: "Data4MOZ"
+      },
+      googleMyMaps: {
+        title: "Google My Maps For Flood Mapping",
+        date: "2024",
+        description: "Training on using Google My Maps for participatory flood mapping and community engagement.",
+        communities: "3 Communities",
+        providedBy: "Data4MOZ"
+      },
+      sustainableNRM: {
+        title: "Sustainable Natural Resources Management",
+        date: "2023",
+        description: "Training on sustainable natural resources management practices for local communities.",
+        communities: "5 Communities",
+        providedBy: "Data4MOZ"
+      },
+      communityGovernance: {
+        title: "Community Governance",
+        date: "2023",
+        description: "Training on community governance and participatory decision-making processes.",
+        committees: "10+ Committees",
+        providedBy: "Data4MOZ"
+      },
+      precisionAgricultureDrones: {
+        title: "Precision Agriculture with Drones",
+        date: "2024",
+        description: "Comprehensive training on using drones for precision agriculture, including data collection, analysis, and application in agricultural monitoring.",
+        participants: "30+ Participants",
+        providedBy: "Data4MOZ"
+      }
     },
     contact: {
       title: "Contact Me",
@@ -375,7 +417,49 @@ export const translations = {
       title: "Formação e Transferência de Competências",
       educationQuote: "A educação é a arma mais poderosa que você pode usar para mudar o mundo",
       educationQuoteAuthor: "Nelson Mandela",
-      educationStatement: "Movido pela citação acima, uso parte do meu tempo para partilhar e/ou transferir competências para os jovens e as gerações vindouras."
+      educationStatement: "Movido pela citação acima, uso parte do meu tempo para partilhar e/ou transferir competências para os jovens e as gerações vindouras.",
+      koboToolbox: {
+        title: "Kobo ToolBox para Recolha e Gestão de Dados",
+        date: "2024",
+        description: "Formação sobre Kobo ToolBox para recolha e gestão eficiente de dados em investigação de campo.",
+        students: "25+ Estudantes",
+        providedBy: "Data4MOZ"
+      },
+      googleEarthEngine: {
+        title: "Webinar Google Earth Engine",
+        date: "2024",
+        description: "Webinar sobre o uso do Google Earth Engine para sensoriamento remoto e análise geoespacial.",
+        attendees: "50+ Participantes",
+        providedBy: "Data4MOZ"
+      },
+      googleMyMaps: {
+        title: "Google My Maps para Mapeamento de Inundações",
+        date: "2024",
+        description: "Formação sobre o uso do Google My Maps para mapeamento participativo de inundações e envolvimento comunitário.",
+        communities: "3 Comunidades",
+        providedBy: "Data4MOZ"
+      },
+      sustainableNRM: {
+        title: "Gestão Sustentável de Recursos Naturais",
+        date: "2023",
+        description: "Formação sobre práticas de gestão sustentável de recursos naturais para comunidades locais.",
+        communities: "5 Comunidades",
+        providedBy: "Data4MOZ"
+      },
+      communityGovernance: {
+        title: "Governança Comunitária",
+        date: "2023",
+        description: "Formação sobre governança comunitária e processos participativos de tomada de decisão.",
+        committees: "10+ Comités",
+        providedBy: "Data4MOZ"
+      },
+      precisionAgricultureDrones: {
+        title: "Agricultura de Precisão com Drones",
+        date: "2024",
+        description: "Formação abrangente sobre o uso de drones para agricultura de precisão, incluindo recolha de dados, análise e aplicação no monitoramento agrícola.",
+        participants: "30+ Participantes",
+        providedBy: "Data4MOZ"
+      }
     },
     contact: {
       title: "Contacte-me",

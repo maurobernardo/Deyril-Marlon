@@ -10,6 +10,10 @@ export default function Training() {
 
   const trainings = [
     {
+      type: 'precisionAgricultureDrones',
+      image: '/Training/Precision Agriculture with Drones.jpeg',
+    },
+    {
       type: 'koboToolbox',
       image: '/Training/Kobo ToolBox for Data Coollection and  Data Management/imagem.jpg',
     },
@@ -28,10 +32,6 @@ export default function Training() {
     {
       type: 'communityGovernance',
       image: '/Training/Community Governance/image.jpg',
-    },
-    {
-      type: 'precisionAgricultureDrones',
-      image: '/Training/Precision Agriculture with Drones.jpeg',
     },
   ]
 
